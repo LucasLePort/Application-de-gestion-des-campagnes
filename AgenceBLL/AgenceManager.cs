@@ -8,6 +8,5 @@ namespace AgenceBLL
 {
     public class AgenceManager
     {
-
     }
 }
