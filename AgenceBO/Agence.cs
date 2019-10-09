@@ -9,5 +9,6 @@ namespace AgenceBO
     public class Agence
     {
         private string lucas;
+        private string pierre;
     }
 }
