@@ -1,3 +1,8 @@
 # Application-de-gestion-des-campagnes
-Application pour gérer les campagnes de GSB
+Bonjour à tous !
+
+Voici quelque règles à respecter:
+
+- Pour le nom des différentes couches : nomTableNomDeLaCouche(exemple -> AgenceDAL, AgenceBO...)
+-
 
