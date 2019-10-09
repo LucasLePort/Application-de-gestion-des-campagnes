@@ -1,0 +1,7 @@
+Démarche à suivre:
+1-Télécharger GitHub Desktop ici -> https://desktop.github.com/ .
+2-Intaller GitHub Desktop.
+3-Une fois que vous êtes connecté il va falloir clone le repository MAIS il faut d'abord faire une modification pour cela.
+5-Lancer Git Bash et copier/coller la ligne suivante -> git config --global http.proxy http[s]://userName:password@proxyaddress:port 
+(UserName = votre pseudo sur GitHub, password= votre mot de passe GitHub, proxyaddress=10.1.2.5, port=8080)
+6-Ensuite retouner sur GitHub Desktop et clone le repository.
