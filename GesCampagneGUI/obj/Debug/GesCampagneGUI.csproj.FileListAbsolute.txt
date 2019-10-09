@@ -1,0 +1,11 @@
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneGUI.exe.config
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneGUI.exe
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneGUI.pdb
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csprojAssemblyReference.cache
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmGestionVip.resources
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmMenu.resources
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.Properties.Resources.resources
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.GenerateResource.cache
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CoreCompileInputs.cache
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.exe
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.pdb
