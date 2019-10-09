@@ -1,0 +1,2 @@
+AgenceBO\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+.vs
