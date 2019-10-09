@@ -8,5 +8,8 @@ namespace GesCampagneBO
 {
     public class Artiste
     {
+        // déclaration des variables
+        private int id;
+        private string nom;
     }
 }
