@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GesArtisteBLL
+namespace GesCampagneBLL
 {
     public class ArtisteManager
     {
