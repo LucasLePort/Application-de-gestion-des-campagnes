@@ -11,5 +11,15 @@ namespace GesCampagneBO
         // déclaration des variables
         private int id;
         private string nom;
+
+        // constructeur
+        public Artiste(int id, string nom)
+        {
+            this.Id = id;
+            this.Nom = nom;
+        }
+        // méthode
+        public int Id { get => id; set => id = value; }
+        public string Nom { get => nom; set => nom = value; }
     }
 }
