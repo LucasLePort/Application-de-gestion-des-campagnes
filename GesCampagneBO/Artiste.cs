@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GesCampagneBO
 {
-    public class Class1
+    public class Artiste
     {
     }
 }

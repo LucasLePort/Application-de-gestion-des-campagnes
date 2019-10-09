@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GesCampagneDAL
 {
-    public class Class1
+    public class ArtisteDAO
     {
     }
 }
