@@ -1,6 +1,0 @@
-D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceDAO\bin\Debug\AgenceDAO.dll
-D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceDAO\bin\Debug\AgenceDAO.pdb
-D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceDAO\obj\Debug\AgenceDAL.csprojAssemblyReference.cache
-D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceDAO\obj\Debug\AgenceDAL.csproj.CoreCompileInputs.cache
-D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceDAO\obj\Debug\AgenceDAO.dll
-D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceDAO\obj\Debug\AgenceDAO.pdb
