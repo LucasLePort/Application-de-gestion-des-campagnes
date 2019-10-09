@@ -1,0 +1,6 @@
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceBO\bin\Debug\AgenceBO.dll
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceBO\bin\Debug\AgenceBO.pdb
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceBO\obj\Debug\GesCampagneBO.csprojAssemblyReference.cache
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceBO\obj\Debug\GesCampagneBO.csproj.CoreCompileInputs.cache
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceBO\obj\Debug\AgenceBO.dll
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\AgenceBO\obj\Debug\AgenceBO.pdb
