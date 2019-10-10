@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GesCampagneBO;
+using GesCampagneDAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,20 @@ namespace GesCampagneBLL
 {
     public class ArtisteManager
     {
+        private static ArtisteManager uneInstance;
+
+        public static ArtisteManager GetInstance()
+        {
+            if (uneInstance == null)
+            {
+                uneInstance = new ArtisteManager();
+            }
+            return uneInstance;
+        }
+        public List<Artiste> GetArtistes()
+        {
+            return ArtisteDAO.GetInstance().GetArtistes();
+
+        }
     }
 }

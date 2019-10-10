@@ -51,9 +51,18 @@ namespace GesCampagneDAL
                 nomLu = (string)monLecteur["nom"];
 
                 // on cree une instance de la classe Artiste
-                Artiste unArtiste = new Artiste(idLu, nomLu)
+                Artiste unArtiste = new Artiste(idLu, nomLu);
+
+                // on ajoute l'instance créée dans la collection
+                lesArtistes.Add(unArtiste);
             }
+            monLecteur.Close();
+            Connexion.CloseConnection();
+            return lesArtistes;
         }
 
+
+
     }
+
 }

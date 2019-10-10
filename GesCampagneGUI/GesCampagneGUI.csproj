@@ -57,6 +57,11 @@
     </Compile>
     <Compile Include="FrmAjoutEvenement.Designer.cs">
       <DependentUpon>FrmAjoutEvenement.cs</DependentUpon>
+    <Compile Include="FrmConsultArtistes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultArtistes.Designer.cs">
+      <DependentUpon>FrmConsultArtistes.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmGestionVip.cs">
       <SubType>Form</SubType>
@@ -107,6 +112,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAjoutEvenement.resx">
       <DependentUpon>FrmAjoutEvenement.cs</DependentUpon>
+    <EmbeddedResource Include="FrmConsultArtistes.resx">
+      <DependentUpon>FrmConsultArtistes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGestionAgence.resx">
       <DependentUpon>FrmGestionAgence.cs</DependentUpon>
@@ -147,6 +154,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GesCampagneBLL\GesCampagneBLL.csproj">
+      <Project>{33FCCA15-1F0D-40E7-B122-0303E374E594}</Project>
+      <Name>GesCampagneBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GesCampagneBO\GesCampagneBO.csproj">
+      <Project>{826A6D77-F76A-4FB0-A283-D58DA369CD75}</Project>
+      <Name>GesCampagneBO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

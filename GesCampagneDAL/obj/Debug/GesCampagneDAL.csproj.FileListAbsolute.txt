@@ -1,2 +1,11 @@
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csprojAssemblyReference.cache
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CoreCompileInputs.cache
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneDAL.dll
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneDAL.pdb
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneBO.dll
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneBO.pdb
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csprojAssemblyReference.cache
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CoreCompileInputs.cache
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CopyComplete
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.dll
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.pdb

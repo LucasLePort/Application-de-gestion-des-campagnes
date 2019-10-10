@@ -42,8 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArtisteManager.cs" />
-    <Compile Include="EvenementManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GesCampagneBO\GesCampagneBO.csproj">
+      <Project>{826A6D77-F76A-4FB0-A283-D58DA369CD75}</Project>
+      <Name>GesCampagneBO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GesCampagneDAL\GesCampagneDAL.csproj">
+      <Project>{4900B200-CB9A-40B9-BB62-27B4B6D29CA5}</Project>
+      <Name>GesCampagneDAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
