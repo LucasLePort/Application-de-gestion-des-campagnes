@@ -8,6 +8,7 @@ namespace GesCampagneBO
 {
     public class Evenement
     {
+        private int id;
         private string theme;
         private string libelle;
         private DateTime dateDebut;
@@ -21,10 +22,12 @@ namespace GesCampagneBO
         public DateTime DateDebut { get => dateDebut; set => dateDebut = value; }
         public DateTime DateFin { get => dateFin; set => dateFin = value; }
         public Ville LaVille { get => laVille; set => laVille = value; }
-        internal Evenementiel LeEvenementiel { get => leEvenementiel; set => leEvenementiel = value; }
+        public Evenementiel LeEvenementiel { get => leEvenementiel; set => leEvenementiel = value; }
+        public int Id { get => id; set => id = value; }
 
-        public Evenement(string theme, string libelle, DateTime dateDebut, DateTime dateFin, Ville laVille, Evenementiel leEvenementiel)
+        public Evenement(int id, string theme, string libelle, DateTime dateDebut, DateTime dateFin, Ville laVille, Evenementiel leEvenementiel)
         {
+            this.id = id;
             this.theme = theme;
             this.libelle = libelle;
             this.dateDebut = dateDebut;

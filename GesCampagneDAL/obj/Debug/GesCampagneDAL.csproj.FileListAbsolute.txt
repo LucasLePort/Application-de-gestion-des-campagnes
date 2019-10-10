@@ -9,3 +9,12 @@ C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\ob
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CopyComplete
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.dll
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.pdb
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneDAL.dll
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneDAL.pdb
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneBO.dll
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneBO.pdb
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csprojAssemblyReference.cache
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CoreCompileInputs.cache
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CopyComplete
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.dll
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.pdb

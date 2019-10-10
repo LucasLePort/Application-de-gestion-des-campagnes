@@ -44,6 +44,7 @@
             this.rbtComm = new System.Windows.Forms.RadioButton();
             this.rbtEvent = new System.Windows.Forms.RadioButton();
             this.lblTypeAgence = new System.Windows.Forms.Label();
+            this.btnAjouterAgence = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNom
@@ -183,11 +184,21 @@
             this.lblTypeAgence.TabIndex = 15;
             this.lblTypeAgence.Text = "Type de l\'agence :";
             // 
+            // btnAjouterAgence
+            // 
+            this.btnAjouterAgence.Location = new System.Drawing.Point(296, 342);
+            this.btnAjouterAgence.Name = "btnAjouterAgence";
+            this.btnAjouterAgence.Size = new System.Drawing.Size(141, 47);
+            this.btnAjouterAgence.TabIndex = 16;
+            this.btnAjouterAgence.Text = "Ajouter ";
+            this.btnAjouterAgence.UseVisualStyleBackColor = true;
+            // 
             // FrmAjoutAgence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAjouterAgence);
             this.Controls.Add(this.lblTypeAgence);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.rbtEvent);
@@ -229,5 +240,6 @@
         private System.Windows.Forms.RadioButton rbtComm;
         private System.Windows.Forms.RadioButton rbtEvent;
         private System.Windows.Forms.Label lblTypeAgence;
+        private System.Windows.Forms.Button btnAjouterAgence;
     }
 }
