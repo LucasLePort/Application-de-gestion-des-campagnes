@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Artiste.cs" />
+    <Compile Include="Communication.cs" />
     <Compile Include="Evenement.cs" />
+    <Compile Include="Evenementiel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ville.cs" />
   </ItemGroup>
