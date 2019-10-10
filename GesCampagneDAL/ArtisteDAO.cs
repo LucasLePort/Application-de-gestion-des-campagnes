@@ -32,15 +32,16 @@ namespace GesCampagneDAL
             string nomLu;
             string siteLu;
             int idCourantLu;
+            string CourantLibelleLu;
             SqlConnection cnx = Connexion.GetObjConnexion();
-
+            Courant unCourant;
             SqlDataReader monLecteur;
 
             List<Artiste> lesArtistes;
             lesArtistes = new List<Artiste>();
             maCommand = new SqlCommand();
             maCommand.Connection = cnx;
-            maCommand.CommandText = "select id, nom, site, id_Courant from Artiste";
+            maCommand.CommandText = "select Artiste.id, nom, site, Courant.id as 'idCourant', Courant.libelle as 'libelleCourant' from Artiste join Courant on id_Courant = Courant.id";
 
             // execution de la requete
 
@@ -51,10 +52,13 @@ namespace GesCampagneDAL
                 idLu = (int)monLecteur["id"];
                 nomLu = (string)monLecteur["nom"];
                 siteLu = (string)monLecteur["site"];
-                idCourantLu = (int)monLecteur["id_Courant"];
+                idCourantLu = (int)monLecteur["idCourant"];
+                CourantLibelleLu = (string)monLecteur["libelleCourant"];
+
+                unCourant = new Courant(idCourantLu, CourantLibelleLu);
 
                 // on cree une instance de la classe Artiste
-                Artiste unArtiste = new Artiste(idLu, nomLu, siteLu, idCourantLu);
+                Artiste unArtiste = new Artiste(idLu, nomLu, siteLu, unCourant);
 
                 // on ajoute l'instance créée dans la collection
                 lesArtistes.Add(unArtiste);

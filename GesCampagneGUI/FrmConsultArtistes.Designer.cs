@@ -35,9 +35,9 @@
             // dtgArtiste
             // 
             this.dtgArtiste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgArtiste.Location = new System.Drawing.Point(240, 115);
+            this.dtgArtiste.Location = new System.Drawing.Point(102, 65);
             this.dtgArtiste.Name = "dtgArtiste";
-            this.dtgArtiste.Size = new System.Drawing.Size(240, 150);
+            this.dtgArtiste.Size = new System.Drawing.Size(599, 284);
             this.dtgArtiste.TabIndex = 0;
             // 
             // FrmConsultArtistes
