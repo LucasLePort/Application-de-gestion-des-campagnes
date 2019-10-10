@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GesCampagneBO
 {
-    public class Evenementiel
+    public class Communication
     {
         private int id;
         private string nom;
@@ -16,15 +16,15 @@ namespace GesCampagneBO
         private string site;
         private Ville laVille;
 
-        public Evenementiel(int id, string nom, string rue, string telephone, string mail, string site, Ville laVille)
+        public Communication(int id, string nom, string rue, string telephone, string mail, string site, Ville laVille)
         {
-            this.id = id;
-            this.nom = nom;
-            this.rue = rue;
-            this.telephone = telephone;
-            this.mail = mail;
-            this.site = site;
-            this.laVille = laVille;
+            this.Id = id;
+            this.Nom = nom;
+            this.Rue = rue;
+            this.Telephone = telephone;
+            this.Mail = mail;
+            this.Site = site;
+            this.LaVille = laVille;
         }
 
         public int Id { get => id; set => id = value; }
