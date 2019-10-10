@@ -10,3 +10,8 @@ C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\ob
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.csproj.CoreCompileInputs.cache
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.dll
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.pdb
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneBO.dll
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneDAL.dll
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneBO.pdb
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneDAL.pdb
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.csproj.CopyComplete
