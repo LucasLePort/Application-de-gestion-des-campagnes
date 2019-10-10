@@ -13,3 +13,7 @@ AgenceBO/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 *.cache
 .vs/PPECampagne/v15/.suo
 GesCampagneGUI/App.config
+GesCampagneGUI/App.config
+*.config
+*.config
+GesCampagneGUI/App.config
