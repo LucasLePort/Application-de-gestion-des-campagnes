@@ -12,6 +12,11 @@ namespace GesCampagneBO
         private int id;
         private string nom;
 
+        public Artiste(string nom)
+        {
+            this.nom = nom;
+        }
+
         // constructeur
         public Artiste(int id, string nom)
         {

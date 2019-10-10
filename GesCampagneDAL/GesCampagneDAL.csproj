@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,7 +43,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArtisteDAO.cs" />
+    <Compile Include="Connexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GesCampagneBO\GesCampagneBO.csproj">
+      <Project>{826A6D77-F76A-4FB0-A283-D58DA369CD75}</Project>
+      <Name>GesCampagneBO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
