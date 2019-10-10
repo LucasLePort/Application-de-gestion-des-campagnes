@@ -55,7 +55,7 @@ namespace GesCampagneDAL
                 idCourantLu = (int)monLecteur["idCourant"];
                 CourantLibelleLu = (string)monLecteur["libelleCourant"];
 
-                unCourant = new Courant(CourantLibelleLu);
+                unCourant = new Courant(idCourantLu, CourantLibelleLu);
 
                 // on cree une instance de la classe Artiste
                 Artiste unArtiste = new Artiste(idLu, nomLu, siteLu, unCourant);
