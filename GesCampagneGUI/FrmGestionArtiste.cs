@@ -16,5 +16,12 @@ namespace GesCampagneGUI
         {
             InitializeComponent();
         }
+
+        private void btnConsultArtiste_Click(object sender, EventArgs e)
+        {
+            FrmConsultArtistes maConsultArtiste;
+            maConsultArtiste= new FrmConsultArtistes();
+            maConsultArtiste.Show();
+        }
     }
 }

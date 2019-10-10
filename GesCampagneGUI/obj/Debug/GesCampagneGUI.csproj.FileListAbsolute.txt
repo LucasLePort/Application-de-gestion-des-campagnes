@@ -31,3 +31,10 @@ D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\Ges
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmGestionEvenement.resources
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutAgence.resources
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultArtistes.resources
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBLL.dll
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBO.dll
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneDAL.dll
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBLL.pdb
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBO.pdb
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneDAL.pdb
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CopyComplete
