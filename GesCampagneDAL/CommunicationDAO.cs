@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GesCampagneBO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,25 @@ namespace GesCampagneDAL
 {
     public class CommunicationDAO
     {
+        private static CommunicationDAO uneInstance;
+
+        public static CommunicationDAO GetInstance()
+        {
+            if (uneInstance == null)
+            {
+                uneInstance = new CommunicationDAO();
+            }
+            return uneInstance;
+        }
+
+        private CommunicationDAO()
+        {
+
+        }
+
+        public List<Communication> GetCommunications()
+        {
+
+        }
     }
 }
