@@ -50,6 +50,7 @@
             this.btnConsultArtiste.TabIndex = 4;
             this.btnConsultArtiste.Text = "Consultation des artistes";
             this.btnConsultArtiste.UseVisualStyleBackColor = true;
+            this.btnConsultArtiste.Click += new System.EventHandler(this.btnConsultArtiste_Click);
             // 
             // btnAjoutArtiste
             // 

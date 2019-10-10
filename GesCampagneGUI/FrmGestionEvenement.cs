@@ -19,9 +19,9 @@ namespace GesCampagneGUI
 
         private void btn_AjoutEvenement_Click(object sender, EventArgs e)
         {
-            FrmAjoutEvenement unEvenement;
-            unEvenement = new FrmAjoutEvenement();
-            unEvenement.Show();
+           FrmAjoutEvenement unEvenement;
+           unEvenement = new FrmAjoutEvenement();
+           unEvenement.Show();
         }
     }
 }
