@@ -38,6 +38,7 @@ C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\bi
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBO.pdb
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneDAL.pdb
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CopyComplete
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutEvenement.resources
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBLL.dll
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBO.dll
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneDAL.dll

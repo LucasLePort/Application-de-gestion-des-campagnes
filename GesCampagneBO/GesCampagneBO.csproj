@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Artiste.cs" />
     <Compile Include="Communication.cs" />
+    <Compile Include="Courant.cs" />
     <Compile Include="Evenement.cs" />
     <Compile Include="Evenementiel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

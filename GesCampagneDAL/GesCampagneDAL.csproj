@@ -45,6 +45,7 @@
     <Compile Include="ArtisteDAO.cs" />
     <Compile Include="CommunicationDAO.cs" />
     <Compile Include="Connexion.cs" />
+    <Compile Include="CourantDAO.cs" />
     <Compile Include="EvenementDAO.cs" />
     <Compile Include="EvenementielDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
