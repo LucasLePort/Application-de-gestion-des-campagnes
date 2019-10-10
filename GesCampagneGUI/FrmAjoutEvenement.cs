@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace GesCampagneGUI
 {
-    public partial class FrmGestionEvenement : Form
+    public partial class FrmAjoutEvenement : Form
     {
-        public FrmGestionEvenement()
+        public FrmAjoutEvenement()
         {
             InitializeComponent();
-        }
-
-        private void btn_AjoutEvenement_Click(object sender, EventArgs e)
-        {
-            FrmAjoutEvenement unEvenement;
-            unEvenement = new FrmAjoutEvenement();
-            unEvenement.Show();
         }
     }
 }

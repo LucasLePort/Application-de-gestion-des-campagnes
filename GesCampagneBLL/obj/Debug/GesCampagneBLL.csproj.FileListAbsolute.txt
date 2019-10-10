@@ -4,3 +4,8 @@ D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\Ges
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.csproj.CoreCompileInputs.cache
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.dll
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.pdb
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.csproj.CoreCompileInputs.cache
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.dll
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.pdb
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneBLL.dll
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneBLL.pdb
