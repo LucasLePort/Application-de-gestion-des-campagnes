@@ -30,7 +30,8 @@ namespace GesCampagneDAL
             // déclaration des variables de travail
             int idLu;
             string nomLu;
-
+            string siteLu;
+            int idCourantLu;
             SqlConnection cnx = Connexion.GetObjConnexion();
 
             SqlDataReader monLecteur;
@@ -39,7 +40,7 @@ namespace GesCampagneDAL
             lesArtistes = new List<Artiste>();
             maCommand = new SqlCommand();
             maCommand.Connection = cnx;
-            maCommand.CommandText = "select id, nom from Artiste";
+            maCommand.CommandText = "select id, nom, site, id_Courant from Artiste";
 
             // execution de la requete
 
@@ -49,9 +50,11 @@ namespace GesCampagneDAL
             {
                 idLu = (int)monLecteur["id"];
                 nomLu = (string)monLecteur["nom"];
+                siteLu = (string)monLecteur["site"];
+                idCourantLu = (int)monLecteur["id_Courant"];
 
                 // on cree une instance de la classe Artiste
-                Artiste unArtiste = new Artiste(idLu, nomLu);
+                Artiste unArtiste = new Artiste(idLu, nomLu, siteLu, idCourantLu);
 
                 // on ajoute l'instance créée dans la collection
                 lesArtistes.Add(unArtiste);
