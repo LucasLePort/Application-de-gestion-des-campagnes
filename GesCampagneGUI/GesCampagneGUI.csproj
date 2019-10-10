@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAjoutEvenement.cs">
+    <Compile Include="FrmAjoutAgence.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAjoutEvenement.Designer.cs">
-      <DependentUpon>FrmAjoutEvenement.cs</DependentUpon>
+    <Compile Include="FrmAjoutAgence.Designer.cs">
+      <DependentUpon>FrmAjoutAgence.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmGestionVip.cs">
       <SubType>Form</SubType>
@@ -96,8 +96,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmAjoutEvenement.resx">
-      <DependentUpon>FrmAjoutEvenement.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAjoutAgence.resx">
+      <DependentUpon>FrmAjoutAgence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGestionAgence.resx">
       <DependentUpon>FrmGestionAgence.cs</DependentUpon>
