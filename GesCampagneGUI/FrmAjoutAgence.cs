@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace GesCampagneGUI
 {
-    public partial class FrmGestionAgence : Form
+    public partial class FrmAjoutAgence : Form
     {
-        public FrmGestionAgence()
+        public FrmAjoutAgence()
         {
             InitializeComponent();
         }
 
-        private void btn_AjoutAgence_Click(object sender, EventArgs e)
+        private void lblNom_Click(object sender, EventArgs e)
         {
-            FrmAjoutAgence uneAgence;
-            uneAgence = new FrmAjoutAgence();
-            uneAgence.Show();
+
         }
     }
 }

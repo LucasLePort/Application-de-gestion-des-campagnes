@@ -59,6 +59,7 @@
             this.btn_AjoutAgence.TabIndex = 3;
             this.btn_AjoutAgence.Text = "Ajouter une agence";
             this.btn_AjoutAgence.UseVisualStyleBackColor = true;
+            this.btn_AjoutAgence.Click += new System.EventHandler(this.btn_AjoutAgence_Click);
             // 
             // FrmGestionAgence
             // 
