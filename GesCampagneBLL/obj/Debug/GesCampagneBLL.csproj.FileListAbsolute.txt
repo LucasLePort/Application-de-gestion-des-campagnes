@@ -15,3 +15,8 @@ C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\bi
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneBO.pdb
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneDAL.pdb
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.csproj.CopyComplete
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneBO.dll
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneDAL.dll
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneBO.pdb
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneDAL.pdb
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.csproj.CopyComplete
