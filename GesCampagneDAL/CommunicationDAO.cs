@@ -25,9 +25,9 @@ namespace GesCampagneDAL
 
         }
 
-        public List<Communication> GetCommunications()
-        {
+        //public List<Communication> GetCommunications()
+        //{
 
-        }
+        //
     }
 }
