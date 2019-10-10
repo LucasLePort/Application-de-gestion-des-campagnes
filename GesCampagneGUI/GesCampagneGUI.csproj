@@ -46,11 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bd_GesCampagneGSBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bd_GesCampagneGSBDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FrmGestionVip.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,17 +117,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="bd_GesCampagneGSBDataSet.xsc">
-      <DependentUpon>bd_GesCampagneGSBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="bd_GesCampagneGSBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bd_GesCampagneGSBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bd_GesCampagneGSBDataSet.xss">
-      <DependentUpon>bd_GesCampagneGSBDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
