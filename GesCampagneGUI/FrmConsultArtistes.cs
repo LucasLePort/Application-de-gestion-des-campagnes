@@ -1,4 +1,5 @@
 ﻿using GesCampagneBLL;
+using GesCampagneBO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,9 @@ namespace GesCampagneGUI
         public FrmConsultArtistes()
         {
             InitializeComponent();
-            dtgArtiste.DataSource = ArtisteManager.GetInstance().GetArtistes();
+            List<Artiste> lesArtistes;
+            lesArtistes = ArtisteManager.GetInstance().GetArtistes();
+            dtgArtiste.DataSource = lesArtistes;
             dtgArtiste.Columns["id"].Visible = false;
             
 
