@@ -1,0 +1,2 @@
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.csprojAssemblyReference.cache
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.csproj.CoreCompileInputs.cache

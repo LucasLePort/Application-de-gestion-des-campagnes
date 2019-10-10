@@ -59,6 +59,7 @@
             this.btn_AjoutEvenement.TabIndex = 3;
             this.btn_AjoutEvenement.Text = "Ajout d\'un événement";
             this.btn_AjoutEvenement.UseVisualStyleBackColor = true;
+            this.btn_AjoutEvenement.Click += new System.EventHandler(this.btn_AjoutEvenement_Click);
             // 
             // FrmGestionEvenement
             // 
