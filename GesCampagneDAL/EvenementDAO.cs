@@ -1,6 +1,7 @@
 ﻿using GesCampagneBO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -134,14 +135,18 @@ namespace GesCampagneDAL
             SqlCommand maCommande;
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "insert into Evenement values()";
+            strSQL = "insert into Evenement values(@theme, )";
             maCommande.CommandText = strSQL;
-            maCommande.Parameters.Add("nom", SqlDbType.VarChar);
-            maCommande.Parameters[0].Value = unClient.Nom;
-            maCommande.Parameters.Add("prenom", SqlDbType.VarChar);
-            maCommande.Parameters[1].Value = unClient.Prenom;
-            maCommande.Parameters.Add("categ", SqlDbType.Int);
-            maCommande.Parameters[2].Value = unClient.LaCateg.Id;
+            maCommande.Parameters.Add("theme", SqlDbType.VarChar);
+            maCommande.Parameters[0].Value = unEvenement.Theme;
+            maCommande.Parameters.Add("libelle", SqlDbType.VarChar);
+            maCommande.Parameters[1].Value = unEvenement.Libelle;
+            maCommande.Parameters.Add("dateDebut", SqlDbType.DateTime);
+            maCommande.Parameters[2].Value = unEvenement.DateDebut;
+            maCommande.Parameters.Add("dateFin", SqlDbType.DateTime);
+            maCommande.Parameters[3].Value = unEvenement.DateFin;
+            maCommande.Parameters.Add("idVille", SqlDbType.Int);
+            maCommande.Parameters[4].Value = unEvenement.LaVille.Id;
 
             nbEnreg = maCommande.ExecuteNonQuery();
             return nbEnreg;
