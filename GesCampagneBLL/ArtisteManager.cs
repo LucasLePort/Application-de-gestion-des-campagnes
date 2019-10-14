@@ -25,7 +25,7 @@ namespace GesCampagneBLL
             return ArtisteDAO.GetInstance().GetArtistes();
 
         }
-        public int CreerClient(string sonNom, string sonSite, int sonCourant)
+        public int CreerArtiste(string sonNom, string sonSite, int sonCourant)
         {
             Courant unCourant;
             Artiste unArtiste;

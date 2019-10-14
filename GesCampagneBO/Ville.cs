@@ -37,5 +37,16 @@ namespace GesCampagneBO
             this.libelle = libelle;
             this.codePostal = codePostal;
         }
+
+        public Ville(string libelle)
+        {
+            this.libelle = libelle;
+        }
+
+        public Ville(int id, string libelle)
+        {
+            this.id = id;
+            this.libelle = libelle;
+        }
     }
 }
