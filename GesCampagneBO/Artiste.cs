@@ -45,5 +45,7 @@ namespace GesCampagneBO
         public string Nom { get => nom; set => nom = value; }
         public string Site { get => site; set => site = value; }
         public Courant LeCourant { get => leCourant; set => leCourant = value; }
+        public string libelleCourant { get => leCourant.Libelle; }
+
     }
 }
