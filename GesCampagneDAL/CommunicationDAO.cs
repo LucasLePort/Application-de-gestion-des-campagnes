@@ -1,6 +1,7 @@
 ﻿using GesCampagneBO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -115,7 +116,30 @@ namespace GesCampagneDAL
             return lesComms;
         }
 
-       
+        public int AjoutComm(Communication uneComm)
+        {
+            string strSQL = "";
+            int nbEnreg = 0;
+            SqlConnection cnx = Connexion.GetObjConnexion();
 
+            SqlCommand maCommande;
+            maCommande = new SqlCommand("", cnx);
+
+            strSQL = "insert into Communication values (@nom, @rue, @telephone, @mail, @site @ville)";
+            maCommande.CommandText = strSQL;
+            maCommande.Parameters.Add("nom", SqlDbType.VarChar);
+            maCommande.Parameters[0].Value = uneComm.Nom;
+            maCommande.Parameters.Add("rue", SqlDbType.VarChar);
+            maCommande.Parameters[1].Value = uneComm.Rue;
+            maCommande.Parameters.Add("telephone", SqlDbType.VarChar);
+            maCommande.Parameters[2].Value = uneComm.Telephone;
+            maCommande.Parameters.Add("mail", SqlDbType.VarChar);
+            maCommande.Parameters[3].Value = uneComm.Mail;
+            maCommande.Parameters.Add("site", SqlDbType.VarChar);
+            maCommande.Parameters[4].Value = uneComm.Site;
+            maCommande.Parameters.Add("ville", SqlDbType.Int);
+            maCommande.Parameters[5].Value = uneComm.LaVille.id;
+
+        }
     }
 }
