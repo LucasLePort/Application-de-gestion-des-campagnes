@@ -35,7 +35,7 @@ namespace GesCampagneDAL
             string siteComm;
             string ville;
             Communication uneComm;
-            Ville uneVille;
+            Ville laVille;
            string strSQL = "";
 
             SqlConnection cnx = Connexion.GetObjConnexion();
@@ -106,10 +106,15 @@ namespace GesCampagneDAL
                     ville = monLecteur["Ville"].ToString();
                 }
 
-                uneVille = new Ville(ville);
-                uneComm= new Communication(nomComm, rueComm, telephoneComm, mailComm, siteComm, ville)
+                laVille = new Ville(ville);
+                uneComm = new Communication(nomComm, rueComm, telephoneComm, mailComm, siteComm, laVille);
 
+                lesComms.Add(uneComm);
             }
+            monLecteur.Close();
+            return lesComms;
         }
+
+       
     }
 }
