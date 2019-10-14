@@ -43,7 +43,9 @@
   <ItemGroup>
     <Compile Include="ArtisteManager.cs" />
     <Compile Include="CommunicatonManager.cs" />
+    <Compile Include="CourantManager.cs" />
     <Compile Include="EvenementielManager.cs" />
+    <Compile Include="EvenementManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VilleManager.cs" />
   </ItemGroup>

@@ -111,7 +111,10 @@
     <EmbeddedResource Include="FrmAjoutAgence.resx">
       <DependentUpon>FrmAjoutAgence.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAjoutEvenement.resx">    
+    <EmbeddedResource Include="FrmAjoutArtiste.resx">
+      <DependentUpon>FrmAjoutArtiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjoutEvenement.resx">
       <DependentUpon>FrmAjoutEvenement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultArtistes.resx">

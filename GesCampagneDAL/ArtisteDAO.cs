@@ -68,6 +68,35 @@ namespace GesCampagneDAL
             return lesArtistes;
         }
 
+        public int AjoutArtiste(Artiste unArtiste)
+        {
+            string nomArtiste;
+            string site;
+            int nbAjout = 0;
+            int idCourant;
+            // on récupère l'objet responsable de la connexion à la base
+            SqlConnection cnx = Connexion.GetObjConnexion();
+            maCommand = new SqlCommand();
+            maCommand.Connection = cnx;
+            // requête SQL execution
+            maCommand.CommandText = "INSERT INTO Client(nom, site, id_Courant) VALUES (@nom, @site,@idCourant)";
+
+            nomArtiste = unArtiste.Nom;
+            site = unArtiste.Site;
+            idCourant = unArtiste.LeCourant.Id;
+
+            maCommand.Parameters.Add("nom", System.Data.SqlDbType.VarChar);
+            maCommand.Parameters.Add("site", System.Data.SqlDbType.VarChar);
+            maCommand.Parameters.Add("id_Courant", System.Data.SqlDbType.Int);
+            maCommand.Parameters[0].Value = nomArtiste;
+            maCommand.Parameters[1].Value = site;
+            maCommand.Parameters[2].Value = idCourant;
+
+
+            nbAjout = maCommand.ExecuteNonQuery();
+
+            return nbAjout;
+        }
 
 
     }

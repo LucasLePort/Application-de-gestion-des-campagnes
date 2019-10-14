@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GesCampagneBLL;
+using GesCampagneBO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,17 @@ namespace GesCampagneGUI
         public FrmAjoutArtiste()
         {
             InitializeComponent();
+            List<Courant> lesCourants;
+            lesCourants = CourantManager.GetInstance().GetCourant();
+            cbxCourantArtiste.DisplayMember = "libelle";
+            cbxCourantArtiste.ValueMember = "id";
+            cbxCourantArtiste.DataSource = lesCourants;
+            cbxCourantArtiste.SelectedIndex = -1;
+        }
+
+        private void btn_Valider_Click(object sender, EventArgs e)
+        {
+            ArtisteManager.GetInstance().CreerArtiste(txt_nomArtiste.Text, txt_siteArtiste.Text, (int)cbxCourantArtiste.SelectedValue);
         }
     }
 }

@@ -25,5 +25,13 @@ namespace GesCampagneBLL
             return ArtisteDAO.GetInstance().GetArtistes();
 
         }
+        public int CreerArtiste(string sonNom, string sonSite, int sonCourant)
+        {
+            Courant unCourant;
+            Artiste unArtiste;
+            unCourant= new Courant(sonCourant);
+            unArtiste = new Artiste(sonNom, sonSite, unCourant);
+            return ArtisteDAO.GetInstance().AjoutArtiste(unArtiste);
+        }
     }
 }

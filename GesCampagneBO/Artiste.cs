@@ -32,6 +32,13 @@ namespace GesCampagneBO
             this.Site = site;
         }
 
+        public Artiste(string nom, string site, Courant leCourant)
+        {
+            this.nom = nom;
+            this.site = site;
+            this.leCourant = leCourant;
+        }
+
         public Artiste(int id, string nom, string site, Courant leCourant)
         {
             this.id = id;

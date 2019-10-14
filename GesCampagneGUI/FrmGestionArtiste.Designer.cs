@@ -60,6 +60,7 @@
             this.btnAjoutArtiste.TabIndex = 3;
             this.btnAjoutArtiste.Text = "Ajout d\'un artiste";
             this.btnAjoutArtiste.UseVisualStyleBackColor = true;
+            this.btnAjoutArtiste.Click += new System.EventHandler(this.btnAjoutArtiste_Click);
             // 
             // FrmGestionArtiste
             // 
