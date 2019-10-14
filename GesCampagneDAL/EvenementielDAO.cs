@@ -25,9 +25,9 @@ namespace GesCampagneDAL
 
         }
 
-        public List<Evenementiel> GetEvenementiels()
-        {
+        //public List<Evenementiel> GetEvenementiels()
+        //{
 
-        }
+        //}
     }
 }

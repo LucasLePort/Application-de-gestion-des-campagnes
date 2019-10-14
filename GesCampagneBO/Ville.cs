@@ -23,5 +23,9 @@ namespace GesCampagneBO
             this.codePostal = codePostal;
         }
 
+        public Ville(string libelle)
+        {
+            this.libelle = libelle;
+        }
     }
 }
