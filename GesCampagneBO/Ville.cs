@@ -38,17 +38,15 @@ namespace GesCampagneBO
             this.codePostal = codePostal;
         }
 
-        public Ville(int id)
+        public Ville(string libelle)
         {
-            this.id = id;
+            this.libelle = libelle;
         }
 
-        public Ville(int id, string codeInsee, string libelle, string codePostal)
+        public Ville(int id, string libelle)
         {
             this.id = id;
-            this.codeInsee = codeInsee;
             this.libelle = libelle;
-            this.codePostal = codePostal;
         }
     }
 }

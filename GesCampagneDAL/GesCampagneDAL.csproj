@@ -49,6 +49,7 @@
     <Compile Include="EvenementDAO.cs" />
     <Compile Include="EvenementielDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VilleDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GesCampagneBO\GesCampagneBO.csproj">

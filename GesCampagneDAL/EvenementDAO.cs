@@ -109,7 +109,7 @@ namespace GesCampagneDAL
                 }
                 else
                 {
-                    leEvenementiel = (int)monLecteur["idEvenementiel"]);
+                    leEvenementiel = (int)monLecteur["idEvenementiel"];
                 }
 
 
@@ -151,7 +151,7 @@ namespace GesCampagneDAL
             nbEnreg = maCommande.ExecuteNonQuery();
             return nbEnreg;
         }
-        public int ModifClient(Client unClient)
+        /*public int ModifClient(Client unClient)
         {
             string strSQL;
             int nbEnreg = 0;
@@ -175,6 +175,6 @@ namespace GesCampagneDAL
 
             nbEnreg = maCommande.ExecuteNonQuery();
             return nbEnreg;
-        }
+        }*/
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GesCampagneBLL;
+using GesCampagneBO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +17,39 @@ namespace GesCampagneGUI
         public FrmAjoutAgence()
         {
             InitializeComponent();
+            List<Ville> lesVilles;
+            lesVilles = VilleManager.GetInstance().GetVilles();
+            cbxVille.DataSource = lesVilles;
+            cbxVille.ValueMember = "id";
+            cbxVille.DisplayMember = "libelle";
         }
 
-        private void lblNom_Click(object sender, EventArgs e)
+        private void btnAjouterAgence_Click(object sender, EventArgs e)
         {
+            string message = "";
+            string erreur;
+            int nbAjout;
 
+            nbAjout = CommunicatonManager.GetInstance().CreerCommunication(txtNom.Text, txtRue.Text, txtNum.Text, txtMail.Text, txtSite.Text, (int)cbxVille.SelectedValue, out erreur);
+            if (nbAjout == 0)
+            {
+                message = "Aucune agence de communication n'a été ajoutée";
+            }
+            else
+            {
+                message = "L'agence de communication a bien été créée";
+            }
+            if (erreur != "")
+            {
+                message = erreur;
+            }
+            MessageBox.Show(message);
+            txtNom.Text = "";
+            txtRue.Text = "";
+            txtNum.Text = "";
+            txtMail.Text = "";
+            txtSite.Text = "";
+            cbxVille.Text = "";
         }
     }
 }

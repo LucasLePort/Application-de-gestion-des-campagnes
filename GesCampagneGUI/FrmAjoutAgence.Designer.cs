@@ -35,12 +35,12 @@
             this.lblMail = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
+            this.txtNum = new System.Windows.Forms.TextBox();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.txtSite = new System.Windows.Forms.TextBox();
+            this.txtRue = new System.Windows.Forms.TextBox();
+            this.cbxVille = new System.Windows.Forms.ComboBox();
             this.rbtComm = new System.Windows.Forms.RadioButton();
             this.rbtEvent = new System.Windows.Forms.RadioButton();
             this.lblTypeAgence = new System.Windows.Forms.Label();
@@ -55,7 +55,6 @@
             this.lblNom.Size = new System.Drawing.Size(93, 13);
             this.lblNom.TabIndex = 0;
             this.lblNom.Text = "Nom de l\'agence :";
-            this.lblNom.Click += new System.EventHandler(this.lblNom_Click);
             // 
             // lblVille
             // 
@@ -110,48 +109,48 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Site internet :";
             // 
-            // textBox1
+            // txtNom
             // 
-            this.textBox1.Location = new System.Drawing.Point(316, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 9;
+            this.txtNom.Location = new System.Drawing.Point(316, 33);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(100, 20);
+            this.txtNom.TabIndex = 9;
             // 
-            // textBox2
+            // txtNum
             // 
-            this.textBox2.Location = new System.Drawing.Point(316, 63);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtNum.Location = new System.Drawing.Point(316, 63);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.Size = new System.Drawing.Size(100, 20);
+            this.txtNum.TabIndex = 10;
             // 
-            // textBox3
+            // txtMail
             // 
-            this.textBox3.Location = new System.Drawing.Point(316, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtMail.Location = new System.Drawing.Point(316, 102);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(100, 20);
+            this.txtMail.TabIndex = 11;
             // 
-            // textBox4
+            // txtSite
             // 
-            this.textBox4.Location = new System.Drawing.Point(316, 139);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 12;
+            this.txtSite.Location = new System.Drawing.Point(316, 139);
+            this.txtSite.Name = "txtSite";
+            this.txtSite.Size = new System.Drawing.Size(100, 20);
+            this.txtSite.TabIndex = 12;
             // 
-            // textBox5
+            // txtRue
             // 
-            this.textBox5.Location = new System.Drawing.Point(316, 242);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 5;
+            this.txtRue.Location = new System.Drawing.Point(316, 242);
+            this.txtRue.Name = "txtRue";
+            this.txtRue.Size = new System.Drawing.Size(100, 20);
+            this.txtRue.TabIndex = 5;
             // 
-            // comboBox1
+            // cbxVille
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(316, 283);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 6;
+            this.cbxVille.FormattingEnabled = true;
+            this.cbxVille.Location = new System.Drawing.Point(316, 283);
+            this.cbxVille.Name = "cbxVille";
+            this.cbxVille.Size = new System.Drawing.Size(121, 21);
+            this.cbxVille.TabIndex = 6;
             // 
             // rbtComm
             // 
@@ -192,6 +191,7 @@
             this.btnAjouterAgence.TabIndex = 16;
             this.btnAjouterAgence.Text = "Ajouter ";
             this.btnAjouterAgence.UseVisualStyleBackColor = true;
+            this.btnAjouterAgence.Click += new System.EventHandler(this.btnAjouterAgence_Click);
             // 
             // FrmAjoutAgence
             // 
@@ -200,16 +200,16 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAjouterAgence);
             this.Controls.Add(this.lblTypeAgence);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbxVille);
             this.Controls.Add(this.rbtEvent);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtRue);
             this.Controls.Add(this.rbtComm);
             this.Controls.Add(this.lblRue);
             this.Controls.Add(this.lblVille);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSite);
+            this.Controls.Add(this.txtMail);
+            this.Controls.Add(this.txtNum);
+            this.Controls.Add(this.txtNom);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTel);
             this.Controls.Add(this.lblMail);
@@ -231,12 +231,12 @@
         private System.Windows.Forms.Label lblTel;
         private System.Windows.Forms.Label lblRue;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox cbxVille;
+        private System.Windows.Forms.TextBox txtRue;
+        private System.Windows.Forms.TextBox txtNom;
+        private System.Windows.Forms.TextBox txtNum;
+        private System.Windows.Forms.TextBox txtMail;
+        private System.Windows.Forms.TextBox txtSite;
         private System.Windows.Forms.RadioButton rbtComm;
         private System.Windows.Forms.RadioButton rbtEvent;
         private System.Windows.Forms.Label lblTypeAgence;

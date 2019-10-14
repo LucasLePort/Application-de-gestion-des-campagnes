@@ -60,15 +60,29 @@ namespace GesCampagneBLL
             {
                 erreur += "\nVeuillez saisir l'adresse mail de l'agence";
             }
-            if (sonNom == "")
+            if (sonSite == "")
             {
-                erreur += "\nVeuillez saisir le nom du l'agence";
+                erreur += "\nVeuillez saisir le nom du site web de l'agence";
             }
-            if (sonNom == "")
+            if (saVille == 0)
             {
-                erreur += "\nVeuillez saisir le nom du l'agence";
+                erreur += "\nVeuillez sélectionner la ville de l'agence";
             }
+            if (erreur == "")
+            {
+                laVille = new Ville(saVille);
+                laComm = new Communication(sonNom, saRue, sonTelephone, sonMail, sonSite, laVille);
 
+                try
+                {
+                    ajoutComm = CommunicationDAO.GetInstance().AjoutComm(laComm);
+                }
+                catch(Exception err)
+                {
+                    erreur = "Erreur lors de la création de l'agence de communication" + err.Message;
+                }
+            }
+            return ajoutComm;
         }
     }
 }
