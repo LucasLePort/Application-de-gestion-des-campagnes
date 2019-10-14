@@ -109,7 +109,7 @@ namespace GesCampagneDAL
                 }
                 else
                 {
-                    leEvenementiel = (int)monLecteur["idEvenementiel"]);
+                    leEvenementiel = (int)monLecteur["idEvenementiel"];
                 }
 
 

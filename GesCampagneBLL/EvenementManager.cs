@@ -55,6 +55,10 @@ namespace GesCampagneBLL
             {
                 msgErreur += "\nVeuillez saisir la date du début de l'événement";
             }
+            if (saDateFin == )
+            {
+                msgErreur += "\nVeuillez saisir la date de fin de l'événement";
+            }
             if (saVille == 0)
             {
                 msgErreur += "\nVeuillez saisir la bonne ville de l'événement";

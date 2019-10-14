@@ -18,3 +18,5 @@ D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\Ges
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CopyComplete
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.dll
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.pdb
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.dll
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.pdb

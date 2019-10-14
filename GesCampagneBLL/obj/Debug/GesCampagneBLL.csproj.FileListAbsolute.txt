@@ -20,3 +20,7 @@ D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\Ges
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneBO.pdb
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\bin\Debug\GesCampagneDAL.pdb
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.csproj.CopyComplete
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.csprojAssemblyReference.cache
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.csproj.CoreCompileInputs.cache
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.dll
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBLL\obj\Debug\GesCampagneBLL.pdb
