@@ -138,7 +138,10 @@ namespace GesCampagneDAL
             maCommande.Parameters.Add("site", SqlDbType.VarChar);
             maCommande.Parameters[4].Value = uneComm.Site;
             maCommande.Parameters.Add("ville", SqlDbType.Int);
-            maCommande.Parameters[5].Value = uneComm.LaVille.id;
+            maCommande.Parameters[5].Value = uneComm.LaVille.Id;
+
+            nbEnreg = maCommande.ExecuteNonQuery();
+            return nbEnreg;
 
         }
     }

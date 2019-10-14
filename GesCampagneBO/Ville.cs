@@ -8,6 +8,7 @@ namespace GesCampagneBO
 {
     public class Ville
     {
+        private int id;
         private string codeInsee;
         private string libelle;
         private string codePostal;
@@ -15,6 +16,7 @@ namespace GesCampagneBO
         public string CodeInsee { get => codeInsee; set => codeInsee = value; }
         public string Libelle { get => libelle; set => libelle = value; }
         public string CodePostal { get => codePostal; set => codePostal = value; }
+        public int Id { get => id; set => id = value; }
 
         public Ville(string codeInsee, string libelle, string codePostal)
         {
@@ -26,6 +28,19 @@ namespace GesCampagneBO
         public Ville(string libelle)
         {
             this.libelle = libelle;
+        }
+
+        public Ville(int id)
+        {
+            this.id = id;
+        }
+
+        public Ville(int id, string codeInsee, string libelle, string codePostal)
+        {
+            this.id = id;
+            this.codeInsee = codeInsee;
+            this.libelle = libelle;
+            this.codePostal = codePostal;
         }
     }
 }
