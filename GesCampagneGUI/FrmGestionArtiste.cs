@@ -23,5 +23,12 @@ namespace GesCampagneGUI
             maConsultArtiste= new FrmConsultArtistes();
             maConsultArtiste.Show();
         }
+
+        private void btnAjoutArtiste_Click(object sender, EventArgs e)
+        {
+            FrmAjoutArtiste monAjoutArtiste;
+            monAjoutArtiste = new FrmAjoutArtiste();
+            monAjoutArtiste.Show();
+        }
     }
 }

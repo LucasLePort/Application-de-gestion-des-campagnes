@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GesCampagneDAL
 {
-    class CourantDAO
+    public class CourantDAO
     {
         private SqlCommand maCommand;
         private static CourantDAO uneInstance;
@@ -25,7 +25,7 @@ namespace GesCampagneDAL
         {
 
         }
-        public List<Courant> GetCategSocioPro()
+        public List<Courant> GetCourant()
         {
             // déclaration des variables de travail
             int idLu;

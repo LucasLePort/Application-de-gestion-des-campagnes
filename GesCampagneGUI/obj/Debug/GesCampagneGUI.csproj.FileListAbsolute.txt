@@ -48,3 +48,4 @@ D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\Ges
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutEvenement.resources
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultArtistes.resources
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CopyComplete
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutArtiste.resources

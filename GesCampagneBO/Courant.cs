@@ -16,6 +16,11 @@ namespace GesCampagneBO
             this.libelle = libelle;
         }
 
+        public Courant(int id)
+        {
+            this.id = id;
+        }
+
         public Courant(int id, string libelle)
         {
             this.Id = id;
