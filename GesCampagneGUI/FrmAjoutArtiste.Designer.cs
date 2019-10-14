@@ -77,6 +77,7 @@
             this.btn_Valider.TabIndex = 4;
             this.btn_Valider.Text = "Enregistrer";
             this.btn_Valider.UseVisualStyleBackColor = true;
+            this.btn_Valider.Click += new System.EventHandler(this.btn_Valider_Click);
             // 
             // cbxCourantArtiste
             // 

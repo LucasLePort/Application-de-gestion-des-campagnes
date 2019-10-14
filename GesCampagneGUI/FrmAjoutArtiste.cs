@@ -24,5 +24,10 @@ namespace GesCampagneGUI
             cbxCourantArtiste.DataSource = lesCourants;
             cbxCourantArtiste.SelectedIndex = -1;
         }
+
+        private void btn_Valider_Click(object sender, EventArgs e)
+        {
+            ArtisteManager.GetInstance().CreerClient(txt_nomArtiste.Text, txt_siteArtiste.Text, (int)cbxCourantArtiste.SelectedValue);
+        }
     }
 }
