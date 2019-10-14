@@ -21,6 +21,7 @@ namespace GesCampagneGUI
             lesArtistes = ArtisteManager.GetInstance().GetArtistes();
             dtgArtiste.DataSource = lesArtistes;
             dtgArtiste.Columns["id"].Visible = false;
+            dtgArtiste.Columns[3].Visible = false;
             
 
         }
