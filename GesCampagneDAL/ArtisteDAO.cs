@@ -79,7 +79,7 @@ namespace GesCampagneDAL
             maCommand = new SqlCommand();
             maCommand.Connection = cnx;
             // requête SQL execution
-            maCommand.CommandText = "INSERT INTO Client(nom, site, id_Courant) VALUES (@nom, @site,@idCourant)";
+            maCommand.CommandText = "INSERT INTO Artiste VALUES (@nom, @site,@idCourant)";
 
             nomArtiste = unArtiste.Nom;
             site = unArtiste.Site;
@@ -87,7 +87,7 @@ namespace GesCampagneDAL
 
             maCommand.Parameters.Add("nom", System.Data.SqlDbType.VarChar);
             maCommand.Parameters.Add("site", System.Data.SqlDbType.VarChar);
-            maCommand.Parameters.Add("id_Courant", System.Data.SqlDbType.Int);
+            maCommand.Parameters.Add("idCourant", System.Data.SqlDbType.Int);
             maCommand.Parameters[0].Value = nomArtiste;
             maCommand.Parameters[1].Value = site;
             maCommand.Parameters[2].Value = idCourant;
