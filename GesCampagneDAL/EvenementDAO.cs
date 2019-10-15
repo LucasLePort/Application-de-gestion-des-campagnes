@@ -151,37 +151,8 @@ namespace GesCampagneDAL
             nbEnreg = maCommande.ExecuteNonQuery();
             return nbEnreg;
         }
-        public int ModifClient(Client unClient)
-        {
-            string strSQL;
-            int nbEnreg = 0;
-            //on récupère l'objet responsable de la connexion à la base
-            SqlConnection cnx = Connexion.GetObjConnexion();
-            //création de l'objet de type SqlCommand
-            SqlCommand maCommande;
-            maCommande = new SqlCommand("", cnx);
+        
 
-            strSQL = "update table Client set nom=@nom, prenom=@prenom,idCategSocioPro=@categ where Client.id = @idCli";
-            maCommande.CommandText = strSQL;
-            maCommande.Parameters.Add("nom", SqlDbType.VarChar);
-            maCommande.Parameters[0].Value = unClient.Nom;
-            maCommande.Parameters.Add("prenom", SqlDbType.VarChar);
-            maCommande.Parameters[1].Value = unClient.Prenom;
-            maCommande.Parameters.Add("categ", SqlDbType.Int);
-            maCommande.Parameters[2].Value = unClient.LaCateg.Id;
-            maCommande.Parameters.Add("idCli", SqlDbType.Int);
-            maCommande.Parameters[3].Value = unClient.Id;
-
-            maCommande.Parameters.Add("idEvenementiel", SqlDbType.Int);
-            maCommande.Parameters[4].Value = unEvenement.LeEvenementiel.Id;
-
-
-
-            nbEnreg = maCommande.ExecuteNonQuery();
-            return nbEnreg;
-
-        }
-
-        }
+        
     }
 }
