@@ -52,7 +52,7 @@ namespace GesCampagneGUI
 
             txt_nomArtiste.Text = "";
             txt_siteArtiste.Text = "";
-            cbxCourantArtiste.SelectedIndex = 0;
+            cbxCourantArtiste.Text ="";
 
         }
     }
