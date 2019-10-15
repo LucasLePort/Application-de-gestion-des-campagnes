@@ -50,7 +50,7 @@ namespace GesCampagneDAL
 
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "select theme, libelle, dateDebut, dateFin, Ville.id as 'idVille', Evenementiel.id as 'idEvenementiel' from Evenement join Ville on id_Ville = id.Ville join Evenementiel on id_Evenementiel = Evenementiel.id";
+            strSQL = "select theme, Evenement.libelle as 'EvenementLibelle', dateDebut, dateFin, Ville.id as 'idVille', Evenementiel.id as 'idEvenementiel' from Evenement join Ville on id_Ville = ville.id join Evenementiel on id_Evenementiel = Evenementiel.id";
             maCommande.CommandText = strSQL;
             // DataReader qui récupère les enregistrements
             monLecteur = maCommande.ExecuteReader();
@@ -67,13 +67,13 @@ namespace GesCampagneDAL
                     theme = monLecteur["Theme"].ToString();
                 }
 
-                if (monLecteur["Libelle"] == DBNull.Value)
+                if (monLecteur["EvenementLibelle"] == DBNull.Value)
                 {
                     libelle = default(string);
                 }
                 else
                 {
-                    libelle = monLecteur["Libelle"].ToString();
+                    libelle = monLecteur["EvenementLibelle"].ToString();
                 }
 
                 if (monLecteur["dateDebut"] == DBNull.Value)
