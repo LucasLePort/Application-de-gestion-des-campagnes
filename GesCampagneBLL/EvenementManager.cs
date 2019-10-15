@@ -51,11 +51,11 @@ namespace GesCampagneBLL
             {
                 msgErreur += "\nVeuillez saisir le libellé de l'événement";
             }
-            if (saDateDebut == )
+            if (saDateDebut == null)
             {
                 msgErreur += "\nVeuillez saisir la date du début de l'événement";
             }
-            if (saDateFin == )
+            if (saDateFin == null)
             {
                 msgErreur += "\nVeuillez saisir la date de fin de l'événement";
             }
