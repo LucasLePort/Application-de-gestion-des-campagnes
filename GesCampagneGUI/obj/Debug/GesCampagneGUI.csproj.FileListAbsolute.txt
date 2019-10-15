@@ -66,3 +66,13 @@ D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debu
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.exe
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.pdb
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutArtiste.resources
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneGUI.exe.config
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneGUI.exe
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneGUI.pdb
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBLL.dll
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBO.dll
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneDAL.dll
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBLL.pdb
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBO.pdb
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneDAL.pdb
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CopyComplete

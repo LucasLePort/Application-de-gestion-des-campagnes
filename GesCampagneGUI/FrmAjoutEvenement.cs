@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GesCampagneBLL;
+using GesCampagneBO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,45 @@ namespace GesCampagneGUI
         public FrmAjoutEvenement()
         {
             InitializeComponent();
+            List<Ville> lesVilles;
+            lesVilles = VilleManager.GetInstance().GetVilles();
+            List<Evenementiel> lesEvenementiels;
+            lesEvenementiels = EvenementielManager.GetInstance().GetEvenementiels();
+            cbxVille.DataSource = lesVilles;
+            cbxVille.ValueMember = "id";
+            cbxVille.DisplayMember = "libelle";
+            cbxEvenementiel.DataSource = lesEvenementiels;
+            cbxEvenementiel.ValueMember = "id";
+            cbxEvenementiel.DisplayMember = "libelle";
+
+        }
+
+        private void btnEnreg_Click(object sender, EventArgs e)
+        {
+            string message = "";
+            string erreur ="";
+            int nbAjout=0;
+            DateTime dateDebut = dtpDateDebut.Value;
+            DateTime dateFin = dtpDateFin.Value;
+
+
+            nbAjout = EvenementManager.GetInstance().CreerEvenement(txtTheme.Text, txtLibelle.Text, dateDebut, dateFin ,(int)cbxVille.SelectedValue, (int)cbxEvenementiel.SelectedValue, out erreur);
+            if (nbAjout == 0)
+            {
+                message = "Aucun événement n'a été ajoutée";
+            }
+            else
+            {
+                message = "L'événement a bien été créé";
+            }
+            if (erreur != "")
+            {
+                message = erreur;
+            }
+            MessageBox.Show(message);
+            
+            cbxVille.Text = "";
+            cbxEvenementiel.Text = "";
         }
     }
 }
