@@ -69,7 +69,7 @@
             this.Controls.Add(this.btn_ModifVip);
             this.Controls.Add(this.btn_AjoutVip);
             this.Name = "FrmGestionVip";
-            this.Text = "Form1";
+            this.Text = "Menu VIP";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
