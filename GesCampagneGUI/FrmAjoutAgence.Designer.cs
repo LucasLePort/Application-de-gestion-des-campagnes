@@ -159,7 +159,6 @@
             this.rbtComm.Name = "rbtComm";
             this.rbtComm.Size = new System.Drawing.Size(97, 17);
             this.rbtComm.TabIndex = 13;
-            this.rbtComm.TabStop = true;
             this.rbtComm.Text = "Communication";
             this.rbtComm.UseVisualStyleBackColor = true;
             // 
@@ -170,7 +169,6 @@
             this.rbtEvent.Name = "rbtEvent";
             this.rbtEvent.Size = new System.Drawing.Size(89, 17);
             this.rbtEvent.TabIndex = 14;
-            this.rbtEvent.TabStop = true;
             this.rbtEvent.Text = "Evenementiel";
             this.rbtEvent.UseVisualStyleBackColor = true;
             // 

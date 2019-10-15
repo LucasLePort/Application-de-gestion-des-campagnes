@@ -151,9 +151,6 @@ namespace GesCampagneDAL
             nbEnreg = maCommande.ExecuteNonQuery();
             return nbEnreg;
         }
-        
-        
-
     }
 }
 
