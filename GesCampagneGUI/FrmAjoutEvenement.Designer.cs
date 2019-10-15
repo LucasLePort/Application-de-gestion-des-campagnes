@@ -34,17 +34,19 @@
             this.lblDateFin = new System.Windows.Forms.Label();
             this.dtpDateFin = new System.Windows.Forms.DateTimePicker();
             this.dtpDateDebut = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEnreg = new System.Windows.Forms.Button();
             this.txtLibelle = new System.Windows.Forms.TextBox();
             this.txtTheme = new System.Windows.Forms.TextBox();
-            this.txtVille = new System.Windows.Forms.TextBox();
             this.lblVille = new System.Windows.Forms.Label();
+            this.cbxVille = new System.Windows.Forms.ComboBox();
+            this.cbxEvenementiel = new System.Windows.Forms.ComboBox();
+            this.lblEvenementiel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTheme
             // 
             this.lblTheme.AutoSize = true;
-            this.lblTheme.Location = new System.Drawing.Point(261, 128);
+            this.lblTheme.Location = new System.Drawing.Point(261, 50);
             this.lblTheme.Name = "lblTheme";
             this.lblTheme.Size = new System.Drawing.Size(46, 13);
             this.lblTheme.TabIndex = 0;
@@ -53,7 +55,7 @@
             // lblLibelle
             // 
             this.lblLibelle.AutoSize = true;
-            this.lblLibelle.Location = new System.Drawing.Point(261, 171);
+            this.lblLibelle.Location = new System.Drawing.Point(261, 114);
             this.lblLibelle.Name = "lblLibelle";
             this.lblLibelle.Size = new System.Drawing.Size(43, 13);
             this.lblLibelle.TabIndex = 1;
@@ -91,55 +93,76 @@
             this.dtpDateDebut.Size = new System.Drawing.Size(200, 20);
             this.dtpDateDebut.TabIndex = 5;
             // 
-            // button1
+            // btnEnreg
             // 
-            this.button1.Location = new System.Drawing.Point(403, 383);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEnreg.Location = new System.Drawing.Point(403, 394);
+            this.btnEnreg.Name = "btnEnreg";
+            this.btnEnreg.Size = new System.Drawing.Size(75, 23);
+            this.btnEnreg.TabIndex = 6;
+            this.btnEnreg.Text = "Enregistrer";
+            this.btnEnreg.UseVisualStyleBackColor = true;
+            this.btnEnreg.Click += new System.EventHandler(this.btnEnreg_Click);
             // 
             // txtLibelle
             // 
-            this.txtLibelle.Location = new System.Drawing.Point(403, 171);
+            this.txtLibelle.Location = new System.Drawing.Point(403, 114);
             this.txtLibelle.Name = "txtLibelle";
             this.txtLibelle.Size = new System.Drawing.Size(200, 20);
             this.txtLibelle.TabIndex = 7;
             // 
             // txtTheme
             // 
-            this.txtTheme.Location = new System.Drawing.Point(403, 121);
+            this.txtTheme.Location = new System.Drawing.Point(403, 50);
             this.txtTheme.Name = "txtTheme";
             this.txtTheme.Size = new System.Drawing.Size(200, 20);
             this.txtTheme.TabIndex = 8;
             // 
-            // txtVille
-            // 
-            this.txtVille.Location = new System.Drawing.Point(403, 229);
-            this.txtVille.Name = "txtVille";
-            this.txtVille.Size = new System.Drawing.Size(200, 20);
-            this.txtVille.TabIndex = 9;
-            // 
             // lblVille
             // 
             this.lblVille.AutoSize = true;
-            this.lblVille.Location = new System.Drawing.Point(264, 229);
+            this.lblVille.Location = new System.Drawing.Point(261, 180);
             this.lblVille.Name = "lblVille";
             this.lblVille.Size = new System.Drawing.Size(32, 13);
             this.lblVille.TabIndex = 10;
             this.lblVille.Text = "Ville :";
+            // 
+            // cbxVille
+            // 
+            this.cbxVille.FormattingEnabled = true;
+            this.cbxVille.Location = new System.Drawing.Point(403, 180);
+            this.cbxVille.Name = "cbxVille";
+            this.cbxVille.Size = new System.Drawing.Size(200, 21);
+            this.cbxVille.TabIndex = 11;
+            // 
+            // cbxEvenementiel
+            // 
+            this.cbxEvenementiel.FormattingEnabled = true;
+            this.cbxEvenementiel.Location = new System.Drawing.Point(403, 235);
+            this.cbxEvenementiel.Name = "cbxEvenementiel";
+            this.cbxEvenementiel.Size = new System.Drawing.Size(200, 21);
+            this.cbxEvenementiel.TabIndex = 12;
+            // 
+            // lblEvenementiel
+            // 
+            this.lblEvenementiel.AutoSize = true;
+            this.lblEvenementiel.Location = new System.Drawing.Point(264, 235);
+            this.lblEvenementiel.Name = "lblEvenementiel";
+            this.lblEvenementiel.Size = new System.Drawing.Size(77, 13);
+            this.lblEvenementiel.TabIndex = 13;
+            this.lblEvenementiel.Text = "Evenementiel :";
             // 
             // FrmAjoutEvenement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblEvenementiel);
+            this.Controls.Add(this.cbxEvenementiel);
+            this.Controls.Add(this.cbxVille);
             this.Controls.Add(this.lblVille);
-            this.Controls.Add(this.txtVille);
             this.Controls.Add(this.txtTheme);
             this.Controls.Add(this.txtLibelle);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEnreg);
             this.Controls.Add(this.dtpDateDebut);
             this.Controls.Add(this.dtpDateFin);
             this.Controls.Add(this.lblDateFin);
@@ -147,7 +170,7 @@
             this.Controls.Add(this.lblLibelle);
             this.Controls.Add(this.lblTheme);
             this.Name = "FrmAjoutEvenement";
-            this.Text = "FrmAjoutEvenement";
+            this.Text = "Ajout d\'un événement";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,10 +184,12 @@
         private System.Windows.Forms.Label lblDateFin;
         private System.Windows.Forms.DateTimePicker dtpDateFin;
         private System.Windows.Forms.DateTimePicker dtpDateDebut;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEnreg;
         private System.Windows.Forms.TextBox txtLibelle;
         private System.Windows.Forms.TextBox txtTheme;
-        private System.Windows.Forms.TextBox txtVille;
         private System.Windows.Forms.Label lblVille;
+        private System.Windows.Forms.ComboBox cbxVille;
+        private System.Windows.Forms.ComboBox cbxEvenementiel;
+        private System.Windows.Forms.Label lblEvenementiel;
     }
 }

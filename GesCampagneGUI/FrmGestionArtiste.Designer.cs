@@ -71,7 +71,7 @@
             this.Controls.Add(this.btnConsultArtiste);
             this.Controls.Add(this.btnAjoutArtiste);
             this.Name = "FrmGestionArtiste";
-            this.Text = "FrmGestionArtiste";
+            this.Text = "Menu artiste";
             this.ResumeLayout(false);
 
         }

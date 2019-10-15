@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_nomArtiste = new System.Windows.Forms.TextBox();
             this.txt_siteArtiste = new System.Windows.Forms.TextBox();
-            this.btn_Valider = new System.Windows.Forms.Button();
+            this.btnValider = new System.Windows.Forms.Button();
             this.cbxCourantArtiste = new System.Windows.Forms.ComboBox();
             this.lbl_Courant = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -69,15 +69,15 @@
             this.txt_siteArtiste.Size = new System.Drawing.Size(100, 20);
             this.txt_siteArtiste.TabIndex = 3;
             // 
-            // btn_Valider
+            // btnValider
             // 
-            this.btn_Valider.Location = new System.Drawing.Point(93, 295);
-            this.btn_Valider.Name = "btn_Valider";
-            this.btn_Valider.Size = new System.Drawing.Size(111, 51);
-            this.btn_Valider.TabIndex = 4;
-            this.btn_Valider.Text = "Enregistrer";
-            this.btn_Valider.UseVisualStyleBackColor = true;
-            this.btn_Valider.Click += new System.EventHandler(this.btn_Valider_Click);
+            this.btnValider.Location = new System.Drawing.Point(93, 295);
+            this.btnValider.Name = "btnValider";
+            this.btnValider.Size = new System.Drawing.Size(111, 51);
+            this.btnValider.TabIndex = 4;
+            this.btnValider.Text = "Enregistrer";
+            this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // cbxCourantArtiste
             // 
@@ -103,13 +103,13 @@
             this.ClientSize = new System.Drawing.Size(302, 452);
             this.Controls.Add(this.lbl_Courant);
             this.Controls.Add(this.cbxCourantArtiste);
-            this.Controls.Add(this.btn_Valider);
+            this.Controls.Add(this.btnValider);
             this.Controls.Add(this.txt_siteArtiste);
             this.Controls.Add(this.txt_nomArtiste);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNomArtiste);
             this.Name = "FrmAjoutArtiste";
-            this.Text = "FrmAjoutArtiste";
+            this.Text = "Ajout d\'un artiste";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,7 +121,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_nomArtiste;
         private System.Windows.Forms.TextBox txt_siteArtiste;
-        private System.Windows.Forms.Button btn_Valider;
+        private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.ComboBox cbxCourantArtiste;
         private System.Windows.Forms.Label lbl_Courant;
     }

@@ -69,7 +69,7 @@
             this.Controls.Add(this.btn_ConsultCampagne);
             this.Controls.Add(this.btn_AjoutCampagne);
             this.Name = "FrmGestionCampagne";
-            this.Text = "FrmGestionCampagne";
+            this.Text = "Menu campagne";
             this.ResumeLayout(false);
 
         }
