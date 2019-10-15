@@ -50,7 +50,7 @@ namespace GesCampagneDAL
 
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "select theme, libelle, dateDebut, dateFin, Ville.id as 'idVille', Evenementiel.id as 'idEvenementiel' from Evenement join Ville on idVille = id.Ville join Evenementiel on idEvenementiel = Evenementiel.id";
+            strSQL = "select theme, libelle, dateDebut, dateFin, Ville.id as 'idVille', Evenementiel.id as 'idEvenementiel' from Evenement join Ville on id_Ville = id.Ville join Evenementiel on id_Evenementiel = Evenementiel.id";
             maCommande.CommandText = strSQL;
             // DataReader qui récupère les enregistrements
             monLecteur = maCommande.ExecuteReader();

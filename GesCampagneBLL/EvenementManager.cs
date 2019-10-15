@@ -65,7 +65,7 @@ namespace GesCampagneBLL
             }
             if (sonEvenementiel == 0)
             {
-                msgErreur += "\nVeuillez saisir le bon évenementiel de l'événement";
+                msgErreur += "\nVeuillez saisir l'événementiel correspondant à l'événement";
             }
             if (msgErreur == "")
             {
