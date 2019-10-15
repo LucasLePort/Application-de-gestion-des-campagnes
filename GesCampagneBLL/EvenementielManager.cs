@@ -30,7 +30,7 @@ namespace GesCampagneBLL
         }
 
         //appel de la couche DAL pour récupérer une collection de communications
-        public List<Evenementiel> GetCommunications()
+        public List<Evenementiel> GetEvenementiels()
         {
             //ici on peut appliquer des règles métier
             return EvenementielDAO.GetInstance().GetEvenementiels();
