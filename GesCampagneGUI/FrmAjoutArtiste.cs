@@ -25,7 +25,8 @@ namespace GesCampagneGUI
             cbxCourantArtiste.SelectedIndex = -1;
         }
 
-        private void btn_Valider_Click(object sender, EventArgs e)
+
+        private void btnValider_Click(object sender, EventArgs e)
         {
             ArtisteManager.GetInstance().CreerArtiste(txt_nomArtiste.Text, txt_siteArtiste.Text, (int)cbxCourantArtiste.SelectedValue);
         }
