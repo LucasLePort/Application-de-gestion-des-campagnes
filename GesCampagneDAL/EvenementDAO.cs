@@ -182,6 +182,6 @@ namespace GesCampagneDAL
 
         }
 
-        }
     }
 }
+
