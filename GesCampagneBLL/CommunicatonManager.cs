@@ -43,6 +43,7 @@ namespace GesCampagneBLL
             Communication laComm;
             Ville laVille;
             int ajoutComm = 0;
+            
 
             if(sonNom=="")
             {

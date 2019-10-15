@@ -29,27 +29,49 @@ namespace GesCampagneGUI
             string message = "";
             string erreur;
             int nbAjout;
-
-            nbAjout = CommunicatonManager.GetInstance().CreerCommunication(txtNom.Text, txtRue.Text, txtNum.Text, txtMail.Text, txtSite.Text, (int)cbxVille.SelectedValue, out erreur);
-            if (nbAjout == 0)
+            if (rbtComm.Checked == true)
             {
-                message = "Aucune agence de communication n'a été ajoutée";
+                nbAjout = CommunicatonManager.GetInstance().CreerCommunication(txtNom.Text, txtRue.Text, txtNum.Text, txtMail.Text, txtSite.Text, (int)cbxVille.SelectedValue, out erreur);
+                if (nbAjout == 0)
+                {
+                    message = "Aucune agence de communication n'a été ajoutée";
+                }
+                else
+                {
+                    message = "L'agence de communication a bien été créée";
+                }
+                if (erreur != "")
+                {
+                    message = erreur;
+                }
             }
             else
             {
-                message = "L'agence de communication a bien été créée";
+                if (rbtEvent.Checked == true)
+                {
+                    nbAjout = EvenementielManager.GetInstance().CreerEvenementiel(txtNom.Text, txtRue.Text, txtNum.Text, txtMail.Text, txtSite.Text, (int)cbxVille.SelectedValue, out erreur);
+                    if (nbAjout == 0)
+                    {
+                        message = "Aucune agence d'évenementiel n'a été ajoutée";
+                    }
+                    else
+                    {
+                        message = "L'agence d'évenementiel a bien été créée";
+                    }
+                    if (erreur != "")
+                    {
+                        message = erreur;
+                    }
+                }
+
+                MessageBox.Show(message);
+                txtNom.Text = "";
+                txtRue.Text = "";
+                txtNum.Text = "";
+                txtMail.Text = "";
+                txtSite.Text = "";
+
             }
-            if (erreur != "")
-            {
-                message = erreur;
-            }
-            MessageBox.Show(message);
-            txtNom.Text = "";
-            txtRue.Text = "";
-            txtNum.Text = "";
-            txtMail.Text = "";
-            txtSite.Text = "";
-            cbxVille.Text = "";
         }
     }
 }

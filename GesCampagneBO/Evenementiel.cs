@@ -21,6 +21,16 @@ namespace GesCampagneBO
             this.id = id;
         }
 
+        public Evenementiel(string nom, string rue, string telephone, string mail, string site, Ville laVille)
+        {
+            this.nom = nom;
+            this.rue = rue;
+            this.telephone = telephone;
+            this.mail = mail;
+            this.site = site;
+            this.laVille = laVille;
+        }
+
         public Evenementiel(int id, string nom, string rue, string telephone, string mail, string site, Ville laVille)
         {
             this.id = id;
