@@ -54,6 +54,11 @@ namespace GesCampagneGUI
             }
             MessageBox.Show(message);
             
+
+            txtTheme.Text = "";
+            txtLibelle.Text = "";
+            dtpDateDebut.Text = "";
+            dtpDateFin.Text = "";
             cbxVille.Text = "";
             cbxEvenementiel.Text = "";
         }
