@@ -20,13 +20,13 @@ namespace GesCampagneGUI
             List<Ville> lesVilles;
             lesVilles = VilleManager.GetInstance().GetVilles();
             List<Evenementiel> lesEvenementiels;
-            lesEvenementiels = EvenementielManager.GetInstance().GetEvenementiels();
+            lesEvenementiels = EvenementielManager.GetInstance().GetEvenementiel();
             cbxVille.DataSource = lesVilles;
             cbxVille.ValueMember = "id";
             cbxVille.DisplayMember = "libelle";
             cbxEvenementiel.DataSource = lesEvenementiels;
             cbxEvenementiel.ValueMember = "id";
-            cbxEvenementiel.DisplayMember = "libelle";
+            cbxEvenementiel.DisplayMember = "nom";
 
         }
 

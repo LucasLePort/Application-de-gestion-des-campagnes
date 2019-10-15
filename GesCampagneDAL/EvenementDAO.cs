@@ -146,6 +146,9 @@ namespace GesCampagneDAL
             maCommande.Parameters[3].Value = unEvenement.DateFin;
             maCommande.Parameters.Add("idVille", SqlDbType.Int);
             maCommande.Parameters[4].Value = unEvenement.LaVille.Id;
+            maCommande.Parameters.Add("idEvenementiel", SqlDbType.Int);
+            maCommande.Parameters[5].Value = unEvenement.LeEvenementiel.Id;
+
 
 
             nbEnreg = maCommande.ExecuteNonQuery();
