@@ -51,6 +51,7 @@ namespace GesCampagneBLL
             {
                 msgErreur += "\nVeuillez saisir le libellé de l'événement";
             }
+            if (saDateDebut == null )
             if (saDateDebut == null)
             {
                 msgErreur += "\nVeuillez saisir la date du début de l'événement";
