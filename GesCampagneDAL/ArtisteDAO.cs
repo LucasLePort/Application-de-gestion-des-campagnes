@@ -73,7 +73,7 @@ namespace GesCampagneDAL
             string nomArtiste;
             string site;
             int nbAjout = 0;
-            int idCourant;
+            int idCourant = 0;
             // on récupère l'objet responsable de la connexion à la base
             SqlConnection cnx = Connexion.GetObjConnexion();
             maCommand = new SqlCommand();
