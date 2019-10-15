@@ -147,7 +147,7 @@
             this.Controls.Add(this.lblLibelle);
             this.Controls.Add(this.lblTheme);
             this.Name = "FrmAjoutEvenement";
-            this.Text = "FrmAjoutEvenement";
+            this.Text = "Ajout d\'un événement";
             this.ResumeLayout(false);
             this.PerformLayout();
 

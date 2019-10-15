@@ -70,7 +70,7 @@
             this.Controls.Add(this.btn_ModifEvenement);
             this.Controls.Add(this.btn_AjoutEvenement);
             this.Name = "FrmGestionEvenement";
-            this.Text = "FrmGestionEvenement";
+            this.Text = "Menu événement";
             this.ResumeLayout(false);
 
         }

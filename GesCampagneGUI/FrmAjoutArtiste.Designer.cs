@@ -109,7 +109,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNomArtiste);
             this.Name = "FrmAjoutArtiste";
-            this.Text = "FrmAjoutArtiste";
+            this.Text = "Ajout d\'un artiste";
             this.ResumeLayout(false);
             this.PerformLayout();
 

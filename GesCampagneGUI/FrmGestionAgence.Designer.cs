@@ -70,7 +70,7 @@
             this.Controls.Add(this.btn_ConsultAgence);
             this.Controls.Add(this.btn_AjoutAgence);
             this.Name = "FrmGestionAgence";
-            this.Text = "FrmGestionAgence";
+            this.Text = "Menu de gestion des agence";
             this.ResumeLayout(false);
 
         }

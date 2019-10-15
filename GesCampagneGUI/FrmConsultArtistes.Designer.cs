@@ -47,7 +47,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dtgArtiste);
             this.Name = "FrmConsultArtistes";
-            this.Text = "FrmConsultArtistes";
+            this.Text = "Consultation des artistes";
             ((System.ComponentModel.ISupportInitialize)(this.dtgArtiste)).EndInit();
             this.ResumeLayout(false);
 
