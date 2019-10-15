@@ -56,7 +56,6 @@ namespace GesCampagneBLL
             }
             return ajoutArtiste;
   
-
         }
     }
 }
