@@ -58,6 +58,12 @@
     <Compile Include="FrmAjoutEvenement.Designer.cs">
       <DependentUpon>FrmAjoutEvenement.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsultAgence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultAgence.Designer.cs">
+      <DependentUpon>FrmConsultAgence.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultArtistes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAjoutEvenement.resx">
       <DependentUpon>FrmAjoutEvenement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultAgence.resx">
+      <DependentUpon>FrmConsultAgence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultArtistes.resx">
       <DependentUpon>FrmConsultArtistes.cs</DependentUpon>
