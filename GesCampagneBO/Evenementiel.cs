@@ -55,5 +55,7 @@ namespace GesCampagneBO
         public string Mail { get => mail; set => mail = value; }
         public string Site { get => site; set => site = value; }
         public Ville LaVille { get => laVille; set => laVille = value; }
+        public string  LibelleVille { get => LaVille.Libelle;}
+
     }
 }

@@ -125,7 +125,9 @@ namespace GesCampagneDAL
             SqlCommand maCommande;
             maCommande = new SqlCommand("", cnx);
 
+
             strSQL = "insert into Communication values (@nom, @rue, @telephone, @mail, @site, @ville)";
+            
             maCommande.CommandText = strSQL;
             maCommande.Parameters.Add("nom", SqlDbType.VarChar);
             maCommande.Parameters[0].Value = uneComm.Nom;
