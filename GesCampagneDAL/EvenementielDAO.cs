@@ -37,7 +37,7 @@ namespace GesCampagneDAL
             string ville;
             Evenementiel unEvent;
             Ville laVille;
-            string strSQL = "";
+            
 
             SqlConnection cnx = Connexion.GetObjConnexion();
 
@@ -51,8 +51,13 @@ namespace GesCampagneDAL
 
             maCommande = new SqlCommand("", cnx);
 
+<<<<<<< Updated upstream
             strSQL = "select nom, rue, telephone, mail, site, libelle as 'ville' FROM Evenementiel join Ville on id_ville=Ville.id";
             maCommande.CommandText = strSQL;
+=======
+            maCommande.CommandType = CommandType.StoredProcedure;
+            maCommande.CommandText = "obtenirlesagencesevenementiel";
+>>>>>>> Stashed changes
 
             monLecteur = maCommande.ExecuteReader();
 
