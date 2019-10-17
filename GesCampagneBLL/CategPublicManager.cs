@@ -1,4 +1,5 @@
 ﻿using GesCampagneBO;
+using GesCampagneDAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +23,11 @@ namespace GesCampagneBLL
             return uneInstance;
         }
         // permet de récupérer toutes les categories de public
-        public List<CategPublic> GetCategsPublic()
+        /*public List<CategPublic> GetCategsPublic()
         {
 
             return CategPublicDAO.GetInstance().GetCategsPublic();
 
-        }
+        }*/
     }
 }
