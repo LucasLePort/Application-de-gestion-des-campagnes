@@ -25,3 +25,12 @@ D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debu
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneBO.dll
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneBO.pdb
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CopyComplete
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneDAL.dll
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneDAL.pdb
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneBO.dll
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\bin\Debug\GesCampagneBO.pdb
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csprojAssemblyReference.cache
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CoreCompileInputs.cache
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.csproj.CopyComplete
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.dll
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneDAL\obj\Debug\GesCampagneDAL.pdb
