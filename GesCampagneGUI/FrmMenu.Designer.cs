@@ -55,35 +55,35 @@
             // 
             this.consultationDesCaractéristiqueDuneAgenceToolStripMenuItem.Name = "consultationDesCaractéristiqueDuneAgenceToolStripMenuItem";
             this.consultationDesCaractéristiqueDuneAgenceToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
-            this.consultationDesCaractéristiqueDuneAgenceToolStripMenuItem.Text = "Gerer les agences";
+            this.consultationDesCaractéristiqueDuneAgenceToolStripMenuItem.Text = "Gérer les agences";
             this.consultationDesCaractéristiqueDuneAgenceToolStripMenuItem.Click += new System.EventHandler(this.consultationDesCaractéristiqueDuneAgenceToolStripMenuItem_Click);
             // 
             // consultationDesCaractDesCampagnesToolStripMenuItem
             // 
             this.consultationDesCaractDesCampagnesToolStripMenuItem.Name = "consultationDesCaractDesCampagnesToolStripMenuItem";
             this.consultationDesCaractDesCampagnesToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
-            this.consultationDesCaractDesCampagnesToolStripMenuItem.Text = "Gerer les campagnes";
+            this.consultationDesCaractDesCampagnesToolStripMenuItem.Text = "Gérer les campagnes";
             this.consultationDesCaractDesCampagnesToolStripMenuItem.Click += new System.EventHandler(this.consultationDesCaractDesCampagnesToolStripMenuItem_Click);
             // 
             // gererLesÉvénementsToolStripMenuItem
             // 
             this.gererLesÉvénementsToolStripMenuItem.Name = "gererLesÉvénementsToolStripMenuItem";
             this.gererLesÉvénementsToolStripMenuItem.Size = new System.Drawing.Size(131, 20);
-            this.gererLesÉvénementsToolStripMenuItem.Text = "Gerer les événements";
+            this.gererLesÉvénementsToolStripMenuItem.Text = "Gérer les événements";
             this.gererLesÉvénementsToolStripMenuItem.Click += new System.EventHandler(this.gererLesÉvénementsToolStripMenuItem_Click);
             // 
             // gererLesVIPsToolStripMenuItem
             // 
             this.gererLesVIPsToolStripMenuItem.Name = "gererLesVIPsToolStripMenuItem";
             this.gererLesVIPsToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.gererLesVIPsToolStripMenuItem.Text = "Gerer les VIPs";
+            this.gererLesVIPsToolStripMenuItem.Text = "Gérer les VIPs";
             this.gererLesVIPsToolStripMenuItem.Click += new System.EventHandler(this.gererLesVIPsToolStripMenuItem_Click);
             // 
             // gererLesArtistesToolStripMenuItem
             // 
             this.gererLesArtistesToolStripMenuItem.Name = "gererLesArtistesToolStripMenuItem";
             this.gererLesArtistesToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
-            this.gererLesArtistesToolStripMenuItem.Text = "Gerer les artistes";
+            this.gererLesArtistesToolStripMenuItem.Text = "Gérer les artistes";
             this.gererLesArtistesToolStripMenuItem.Click += new System.EventHandler(this.gererLesArtistesToolStripMenuItem_Click);
             // 
             // FrmMenu
