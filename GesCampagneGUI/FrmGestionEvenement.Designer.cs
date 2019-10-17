@@ -41,6 +41,7 @@
             this.btn_ConsultEvenement.TabIndex = 5;
             this.btn_ConsultEvenement.Text = "Consultations des événements ";
             this.btn_ConsultEvenement.UseVisualStyleBackColor = true;
+            this.btn_ConsultEvenement.Click += new System.EventHandler(this.btn_ConsultEvenement_Click);
             // 
             // btn_ModifEvenement
             // 

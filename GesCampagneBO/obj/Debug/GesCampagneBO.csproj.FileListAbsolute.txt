@@ -16,3 +16,9 @@ D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\bin\Debug
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\bin\Debug\GesCampagneBO.pdb
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.dll
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.pdb
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\bin\Debug\GesCampagneBO.dll
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\bin\Debug\GesCampagneBO.pdb
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.csprojAssemblyReference.cache
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.csproj.CoreCompileInputs.cache
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.dll
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.pdb

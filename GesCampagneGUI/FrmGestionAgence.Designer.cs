@@ -50,6 +50,7 @@
             this.btn_ConsultAgence.TabIndex = 4;
             this.btn_ConsultAgence.Text = "Consulter les agences";
             this.btn_ConsultAgence.UseVisualStyleBackColor = true;
+            this.btn_ConsultAgence.Click += new System.EventHandler(this.btn_ConsultAgence_Click);
             // 
             // btn_AjoutAgence
             // 

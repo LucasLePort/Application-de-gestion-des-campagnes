@@ -16,6 +16,12 @@ namespace GesCampagneBO
         private string site;
         private Ville laVille;
 
+        public Communication(int id, string nom)
+        {
+            this.id = id;
+            this.nom = nom;
+        }
+
         public Communication(string nom, string rue, string telephone, string mail, string site, Ville laVille)
         {
             this.nom = nom;
@@ -44,5 +50,7 @@ namespace GesCampagneBO
         public string Mail { get => mail; set => mail = value; }
         public string Site { get => site; set => site = value; }
         public Ville LaVille { get => laVille; set => laVille = value; }
+        public  string LibelleVille { get => LaVille.Libelle;}
+
     }
 }
