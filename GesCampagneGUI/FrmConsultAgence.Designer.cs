@@ -35,9 +35,9 @@
             // dtgAgence
             // 
             this.dtgAgence.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgAgence.Location = new System.Drawing.Point(97, 24);
+            this.dtgAgence.Location = new System.Drawing.Point(38, 24);
             this.dtgAgence.Name = "dtgAgence";
-            this.dtgAgence.Size = new System.Drawing.Size(555, 300);
+            this.dtgAgence.Size = new System.Drawing.Size(645, 328);
             this.dtgAgence.TabIndex = 0;
             // 
             // FrmConsultAgence
