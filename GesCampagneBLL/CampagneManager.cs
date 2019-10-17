@@ -1,4 +1,5 @@
 ﻿using GesCampagneBO;
+using GesCampagneDAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace GesCampagneBLL
         }
 
         // permet de créer une campagne
-        public int CreerCampagne(string sonIntitule, string sonObjectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenement lEvenement, CategPublic laCategPublic, out string msgErreur)
+        public int CreerCampagne(string sonIntitule, string sonObjectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenementiel, CategPublic laCategPublic, out string msgErreur)
         {
             msgErreur = "";
             int ajoutCampagne = 0;
@@ -57,7 +58,7 @@ namespace GesCampagneBLL
             {
                 msgErreur += "\nVeuillez sélectionner une agence de communication.";
             }
-            if(lEvenement == null)
+            if(lEvenementiel == null)
             {
                 msgErreur += "\nVeuillez sélectionner une agence d'évenementiel.";
             }
@@ -69,7 +70,7 @@ namespace GesCampagneBLL
             // si il y tous les paramètres de saisi, on créer la campagne et on l'ajoute dans toutes les campagnes
             if (msgErreur == "")
             {
-                uneCampagne = new Campagne(sonIntitule, sonObjectif, dateDebut, dateFin, laCommunication, lEvenement, laCategPublic);
+                uneCampagne = new Campagne(sonIntitule, sonObjectif, dateDebut, dateFin, laCommunication, lEvenementiel, laCategPublic);
                 try
                 {
                     ajoutCampagne = CampagneDAO.GetInstance().AjoutCampagne(uneCampagne);

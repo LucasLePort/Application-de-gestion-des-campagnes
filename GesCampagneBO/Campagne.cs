@@ -15,21 +15,21 @@ namespace GesCampagneBO
         private DateTime dateDebut;
         private DateTime dateFin;
         private Communication laCommunication;
-        private Evenementiel lEvenement;
+        private Evenementiel lEvenementiel;
         private CategPublic laCategPublic;
 
-        public Campagne(string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenement, CategPublic laCategPublic)
+        public Campagne(string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenementiel, CategPublic laCategPublic)
         {
             this.intitule = intitule;
             this.objectif = objectif;
             this.dateDebut = dateDebut;
             this.dateFin = dateFin;
             this.laCommunication = laCommunication;
-            this.lEvenement = lEvenement;
+            this.lEvenementiel = lEvenementiel;
             this.laCategPublic = laCategPublic;
         }
 
-        public Campagne(int id, string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenement, CategPublic laCategPublic)
+        public Campagne(int id, string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenementiel, CategPublic laCategPublic)
         {
             this.id = id;
             this.intitule = intitule;
@@ -37,7 +37,7 @@ namespace GesCampagneBO
             this.dateDebut = dateDebut;
             this.dateFin = dateFin;
             this.laCommunication = laCommunication;
-            this.lEvenement = lEvenement;
+            this.lEvenementiel = lEvenementiel;
             this.laCategPublic = laCategPublic;
         }
 
@@ -47,7 +47,7 @@ namespace GesCampagneBO
         public DateTime DateDebut { get => dateDebut; set => dateDebut = value; }
         public DateTime DateFin { get => dateFin; set => dateFin = value; }
         public Communication LaCommunication { get => laCommunication; set => laCommunication = value; }
-        public Evenementiel LEvenement { get => lEvenement; set => lEvenement = value; }
+        public Evenementiel LEvenement { get => lEvenementiel; set => lEvenementiel = value; }
         public CategPublic LaCategPublic { get => laCategPublic; set => laCategPublic = value; }
     }
 }
