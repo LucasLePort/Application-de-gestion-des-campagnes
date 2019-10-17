@@ -1,6 +1,7 @@
 ﻿using GesCampagneBO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -61,7 +62,7 @@ namespace GesCampagneDAL
             maCommande = new SqlCommand("", cnx);
 
             strSQL = "select Campagne.id as 'idCampagne', intitule, objectif, dateDebut, dateFin,Evenementiel.id as 'idEvent', Evenementiel.nom as 'nomEvent'" +
-                ", Communication.id as 'idComm', Communication.nom as 'nomComm', CategPublic.id_ as 'idCatPublic', CategPublic.libelle as 'libCatPublic'" +
+                ", Communication.id as 'idComm', Communication.nom as 'nomComm', CategPublic.id as 'idCatPublic', CategPublic.libelle as 'libCatPublic'" +
                 "from Campagne " +
                 "join Evenementiel on id_Evenementiel=Evenementiel.id " +
                 "join Communication on id_Communication=Communication.id" +
@@ -166,13 +167,13 @@ namespace GesCampagneDAL
                 uneCategPublic = new CategPublic(idCategPublicLu, libelleCategPublicLu);
                 uneCampagne = new Campagne(idLu, intituleLu, objectifLu, dateDebutLu, dateFinLu, uneCommunication, unEvenementiel, uneCategPublic);
 
-                lesEvents.Add(unEvent);
+                lesCampagnes.Add(uneCampagne);
             }
             monLecteur.Close();
-            return lesEvents;
+            return lesCampagnes;
         }
 
-        public int AjoutEvent(Evenementiel unEvent)
+        public int AjoutCampagne(Campagne uneCampagne)
         {
             string strSQL = "";
             int nbEnreg = 0;
@@ -181,20 +182,22 @@ namespace GesCampagneDAL
             SqlCommand maCommande;
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "insert into Evenementiel values (@nom, @rue, @telephone, @mail, @site, @ville)";
+            strSQL = "insert into Campagne values (@intitule, @objectif, @dateDebut, @dateFin, @communication, @evenementiel, @categPublic)";
             maCommande.CommandText = strSQL;
-            maCommande.Parameters.Add("nom", SqlDbType.VarChar);
-            maCommande.Parameters[0].Value = unEvent.Nom;
-            maCommande.Parameters.Add("rue", SqlDbType.VarChar);
-            maCommande.Parameters[1].Value = unEvent.Rue;
-            maCommande.Parameters.Add("telephone", SqlDbType.VarChar);
-            maCommande.Parameters[2].Value = unEvent.Telephone;
-            maCommande.Parameters.Add("mail", SqlDbType.VarChar);
-            maCommande.Parameters[3].Value = unEvent.Mail;
-            maCommande.Parameters.Add("site", SqlDbType.VarChar);
-            maCommande.Parameters[4].Value = unEvent.Site;
-            maCommande.Parameters.Add("ville", SqlDbType.Int);
-            maCommande.Parameters[5].Value = unEvent.LaVille.Id;
+            maCommande.Parameters.Add("intitule", SqlDbType.VarChar);
+            maCommande.Parameters[0].Value = uneCampagne.Intitule;
+            maCommande.Parameters.Add("objectif", SqlDbType.VarChar);
+            maCommande.Parameters[1].Value = uneCampagne.Objectif;
+            maCommande.Parameters.Add("dateDebut", SqlDbType.DateTime);
+            maCommande.Parameters[2].Value = uneCampagne.DateDebut;
+            maCommande.Parameters.Add("dateFin", SqlDbType.DateTime);
+            maCommande.Parameters[3].Value = uneCampagne.DateFin;
+            maCommande.Parameters.Add("communication", SqlDbType.Int);
+            maCommande.Parameters[4].Value = uneCampagne.LaCommunication.Id;
+            maCommande.Parameters.Add("evenementiel", SqlDbType.Int);
+            maCommande.Parameters[5].Value = uneCampagne.LEvenement.Id;
+            maCommande.Parameters.Add("categPublic", SqlDbType.Int);
+            maCommande.Parameters[6].Value = uneCampagne.LaCategPublic.Id;
 
             nbEnreg = maCommande.ExecuteNonQuery();
             return nbEnreg;

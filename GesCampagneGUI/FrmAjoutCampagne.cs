@@ -27,7 +27,7 @@ namespace GesCampagneGUI
 
             // remplissage de la liste d'agences qui font de la communication
             List<Communication> lesAgencesCommunication;
-            lesAgencesCommunication = CommunicatonManager.GetInstance().GetCommunications();
+            lesAgencesCommunication = CommunicationManager.GetInstance().GetCommunications();
             cbxCommunication.DisplayMember = "nom";
             cbxCommunication.ValueMember = "id";
             cbxCommunication.DataSource = lesAgencesCommunication;
