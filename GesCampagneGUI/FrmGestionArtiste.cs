@@ -21,14 +21,14 @@ namespace GesCampagneGUI
         {
             FrmConsultArtistes maConsultArtiste;
             maConsultArtiste= new FrmConsultArtistes();
-            maConsultArtiste.Show();
+            maConsultArtiste.ShowDialog();
         }
 
         private void btnAjoutArtiste_Click(object sender, EventArgs e)
         {
             FrmAjoutArtiste monAjoutArtiste;
             monAjoutArtiste = new FrmAjoutArtiste();
-            monAjoutArtiste.Show();
+            monAjoutArtiste.ShowDialog();
         }
     }
 }

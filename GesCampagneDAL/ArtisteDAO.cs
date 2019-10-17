@@ -41,7 +41,8 @@ namespace GesCampagneDAL
             lesArtistes = new List<Artiste>();
             maCommand = new SqlCommand();
             maCommand.Connection = cnx;
-            maCommand.CommandText = "select Artiste.id, nom, site, Courant.id as 'idCourant', Courant.libelle as 'libelleCourant' from Artiste join Courant on id_Courant = Courant.id";
+            maCommand.CommandType = System.Data.CommandType.StoredProcedure;
+            maCommand.CommandText = "selectartiste";
 
             // execution de la requete
 
@@ -79,8 +80,8 @@ namespace GesCampagneDAL
             maCommand = new SqlCommand();
             maCommand.Connection = cnx;
             // requête SQL execution
-            maCommand.CommandText = "INSERT INTO Artiste VALUES (@nom, @site,@idCourant)";
-
+            maCommand.CommandText = "ajoutartiste";
+            maCommand.CommandType = System.Data.CommandType.StoredProcedure;
             nomArtiste = unArtiste.Nom;
             site = unArtiste.Site;
             idCourant = unArtiste.LeCourant.Id;
