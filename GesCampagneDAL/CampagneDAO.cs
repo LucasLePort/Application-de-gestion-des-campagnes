@@ -49,6 +49,7 @@ namespace GesCampagneDAL
             SqlConnection cnx = Connexion.GetObjConnexion();
 
             //création des différentes collections
+            List<Campagne> lesCampagnes = new List<Campagne>();
             List<Communication> lesCommunications = new List<Communication>();
             List<Evenementiel> lesEvenementiels = new List<Evenementiel>();
             List<CategPublic> lesCategsPublic = new List<CategPublic>();

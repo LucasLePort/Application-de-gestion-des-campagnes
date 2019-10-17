@@ -15,10 +15,10 @@ namespace GesCampagneBO
         private DateTime dateDebut;
         private DateTime dateFin;
         private Communication laCommunication;
-        private Evenement lEvenement;
+        private Evenementiel lEvenement;
         private CategPublic laCategPublic;
 
-        public Campagne(string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenement lEvenement, CategPublic laCategPublic)
+        public Campagne(string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenement, CategPublic laCategPublic)
         {
             this.intitule = intitule;
             this.objectif = objectif;
@@ -29,7 +29,7 @@ namespace GesCampagneBO
             this.laCategPublic = laCategPublic;
         }
 
-        public Campagne(int id, string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenement lEvenement, CategPublic laCategPublic)
+        public Campagne(int id, string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenement, CategPublic laCategPublic)
         {
             this.id = id;
             this.intitule = intitule;
@@ -47,7 +47,7 @@ namespace GesCampagneBO
         public DateTime DateDebut { get => dateDebut; set => dateDebut = value; }
         public DateTime DateFin { get => dateFin; set => dateFin = value; }
         public Communication LaCommunication { get => laCommunication; set => laCommunication = value; }
-        public Evenement LEvenement { get => lEvenement; set => lEvenement = value; }
+        public Evenementiel LEvenement { get => lEvenement; set => lEvenement = value; }
         public CategPublic LaCategPublic { get => laCategPublic; set => laCategPublic = value; }
     }
 }
