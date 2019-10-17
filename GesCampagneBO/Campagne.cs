@@ -18,6 +18,7 @@ namespace GesCampagneBO
         private Evenementiel lEvenementiel;
         private CategPublic laCategPublic;
 
+        // constructeur sans id
         public Campagne(string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenementiel, CategPublic laCategPublic)
         {
             this.intitule = intitule;
@@ -29,6 +30,7 @@ namespace GesCampagneBO
             this.laCategPublic = laCategPublic;
         }
 
+        // constructeur complet
         public Campagne(int id, string intitule, string objectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenementiel, CategPublic laCategPublic)
         {
             this.id = id;
@@ -41,13 +43,14 @@ namespace GesCampagneBO
             this.laCategPublic = laCategPublic;
         }
 
+        // propriétés
         public int Id { get => id; set => id = value; }
         public string Intitule { get => intitule; set => intitule = value; }
         public string Objectif { get => objectif; set => objectif = value; }
         public DateTime DateDebut { get => dateDebut; set => dateDebut = value; }
         public DateTime DateFin { get => dateFin; set => dateFin = value; }
         public Communication LaCommunication { get => laCommunication; set => laCommunication = value; }
-        public Evenementiel LEvenement { get => lEvenementiel; set => lEvenementiel = value; }
+        public Evenementiel LEvenementiel { get => lEvenementiel; set => lEvenementiel = value; }
         public CategPublic LaCategPublic { get => laCategPublic; set => laCategPublic = value; }
     }
 }
