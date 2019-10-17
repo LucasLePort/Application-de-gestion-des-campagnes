@@ -22,16 +22,40 @@ namespace GesCampagneBLL
         }
         public List<Artiste> GetArtistes()
         {
+
             return ArtisteDAO.GetInstance().GetArtistes();
 
         }
-        public int CreerArtiste(string sonNom, string sonSite, int sonCourant)
+        public int CreerArtiste(string sonNom, string sonSite, int sonCourant, out string msgErreur)
         {
+            msgErreur = "";
+            int ajoutArtiste = 0;
             Courant unCourant;
             Artiste unArtiste;
-            unCourant= new Courant(sonCourant);
-            unArtiste = new Artiste(sonNom, sonSite, unCourant);
-            return ArtisteDAO.GetInstance().AjoutArtiste(unArtiste);
+            if(sonNom == "")
+            {
+                msgErreur += "\nVeuillez saisir le nom de l'artiste";
+            }
+            if (sonCourant == 0)
+            {
+                msgErreur += "\nVeuillez saisir le courant de l'artiste";
+            }
+            if (msgErreur == "")
+            {
+
+                unCourant = new Courant(sonCourant);
+                unArtiste = new Artiste(sonNom, sonSite, unCourant);
+                try
+                {
+                    ajoutArtiste = ArtisteDAO.GetInstance().AjoutArtiste(unArtiste);
+                }
+                catch (Exception err)
+                {
+                    msgErreur = "Erreur lors de la création du client" + err.Message;
+                }
+            }
+            return ajoutArtiste;
+  
         }
     }
 }

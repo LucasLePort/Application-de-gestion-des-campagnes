@@ -28,7 +28,32 @@ namespace GesCampagneGUI
 
         private void btnValider_Click(object sender, EventArgs e)
         {
-            ArtisteManager.GetInstance().CreerArtiste(txt_nomArtiste.Text, txt_siteArtiste.Text, (int)cbxCourantArtiste.SelectedValue);
+            
+            string message = "";
+            string erreur = "";
+            int nbAjout = 0;
+
+
+            nbAjout = ArtisteManager.GetInstance().CreerArtiste(txt_nomArtiste.Text, txt_siteArtiste.Text, (int)cbxCourantArtiste.SelectedValue, out erreur);
+            if (nbAjout == 0)
+            {
+                message = "Aucun événement n'a été ajoutée";
+            }
+            else
+            {
+                message = "L'événement a bien été créé";
+            }
+            if (erreur != "")
+            {
+                message = erreur;
+            }
+            MessageBox.Show(message);
+
+
+            txt_nomArtiste.Text = "";
+            txt_siteArtiste.Text = "";
+            cbxCourantArtiste.Text ="";
+
         }
     }
 }

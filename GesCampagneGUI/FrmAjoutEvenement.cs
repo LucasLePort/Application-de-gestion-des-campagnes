@@ -26,7 +26,7 @@ namespace GesCampagneGUI
             cbxVille.DisplayMember = "libelle";
             cbxEvenementiel.DataSource = lesEvenementiels;
             cbxEvenementiel.ValueMember = "id";
-            cbxEvenementiel.DisplayMember = "libelle";
+            cbxEvenementiel.DisplayMember = "nom";
 
         }
 
@@ -54,6 +54,11 @@ namespace GesCampagneGUI
             }
             MessageBox.Show(message);
             
+
+            txtTheme.Text = "";
+            txtLibelle.Text = "";
+            dtpDateDebut.Text = "";
+            dtpDateFin.Text = "";
             cbxVille.Text = "";
             cbxEvenementiel.Text = "";
         }
