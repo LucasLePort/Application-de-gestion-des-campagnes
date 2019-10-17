@@ -16,5 +16,12 @@ namespace GesCampagneGUI
         {
             InitializeComponent();
         }
+
+        private void btn_AjoutCampagne_Click(object sender, EventArgs e)
+        {
+            FrmAjoutCampagne uneCampagne;
+            uneCampagne = new FrmAjoutCampagne();
+            uneCampagne.ShowDialog();
+        }
     }
 }

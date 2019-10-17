@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Artiste.cs" />
+    <Compile Include="Campagne.cs" />
+    <Compile Include="CategPublic.cs" />
     <Compile Include="Communication.cs" />
     <Compile Include="Courant.cs" />
     <Compile Include="Evenement.cs" />
