@@ -64,7 +64,7 @@ namespace GesCampagneDAL
                 }
                 else
                 {
-                    idLu = (int)monLecteur["idC"];
+                    idLu = (int)monLecteur["id"];
                 }
                 if (monLecteur["libelle"] == DBNull.Value)
                 {
