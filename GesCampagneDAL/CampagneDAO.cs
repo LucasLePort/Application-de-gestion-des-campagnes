@@ -11,8 +11,10 @@ namespace GesCampagneDAL
 {
     public class CampagneDAO
     {
+        // instanciation de l'instance
         private static CampagneDAO uneInstance;
 
+        // création de l'instance si elle n'existe pas
         public static CampagneDAO GetInstance()
         {
             if (uneInstance == null)
@@ -22,11 +24,13 @@ namespace GesCampagneDAL
             return uneInstance;
         }
 
+        // constructeur privé 
         private CampagneDAO()
         {
 
         }
 
+        // permet de récupérer 
         public List<Campagne> GetCampagnes()
         {
             int idLu;
@@ -195,7 +199,7 @@ namespace GesCampagneDAL
             maCommande.Parameters.Add("communication", SqlDbType.Int);
             maCommande.Parameters[4].Value = uneCampagne.LaCommunication.Id;
             maCommande.Parameters.Add("evenementiel", SqlDbType.Int);
-            maCommande.Parameters[5].Value = uneCampagne.LEvenement.Id;
+            maCommande.Parameters[5].Value = uneCampagne.LEvenementiel.Id;
             maCommande.Parameters.Add("categPublic", SqlDbType.Int);
             maCommande.Parameters[6].Value = uneCampagne.LaCategPublic.Id;
 

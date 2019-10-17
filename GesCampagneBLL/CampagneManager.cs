@@ -80,6 +80,8 @@ namespace GesCampagneBLL
                     msgErreur = "Erreur lors de la création de la campagne" + err.Message;
                 }
             }
+
+            // on retourne 1 si on a ajouté une campagne, 0 sinon
             return ajoutCampagne;
 
         }
