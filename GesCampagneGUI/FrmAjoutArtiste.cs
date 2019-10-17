@@ -37,11 +37,11 @@ namespace GesCampagneGUI
             nbAjout = ArtisteManager.GetInstance().CreerArtiste(txt_nomArtiste.Text, txt_siteArtiste.Text, (int)cbxCourantArtiste.SelectedValue, out erreur);
             if (nbAjout == 0)
             {
-                message = "Aucun événement n'a été ajoutée";
+                message = "Aucun Artiste n'a été ajoutée";
             }
             else
             {
-                message = "L'événement a bien été créé";
+                message = "L'artiste a bien été créé";
             }
             if (erreur != "")
             {
