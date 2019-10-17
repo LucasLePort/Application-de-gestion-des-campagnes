@@ -21,7 +21,7 @@ namespace GesCampagneGUI
         {
             FrmAjoutAgence uneAgence;
             uneAgence = new FrmAjoutAgence();
-            uneAgence.Show();
+            uneAgence.ShowDialog();
         }
     }
 }
