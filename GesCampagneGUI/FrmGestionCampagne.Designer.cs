@@ -59,6 +59,7 @@
             this.btn_AjoutCampagne.TabIndex = 3;
             this.btn_AjoutCampagne.Text = "Créer une campagne";
             this.btn_AjoutCampagne.UseVisualStyleBackColor = true;
+            this.btn_AjoutCampagne.Click += new System.EventHandler(this.btn_AjoutCampagne_Click);
             // 
             // FrmGestionCampagne
             // 

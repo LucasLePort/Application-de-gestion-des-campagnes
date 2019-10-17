@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArtisteDAO.cs" />
+    <Compile Include="CampagneDAO.cs" />
+    <Compile Include="CategPublicDAO.cs" />
     <Compile Include="CommunicationDAO.cs" />
     <Compile Include="Connexion.cs" />
     <Compile Include="CourantDAO.cs" />
