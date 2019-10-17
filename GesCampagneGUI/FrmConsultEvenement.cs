@@ -21,6 +21,10 @@ namespace GesCampagneGUI
             lesEvenements = EvenementManager.GetInstance().GetEvenements();
             dtgConsultEvenement.DataSource = lesEvenements;
             dtgConsultEvenement.Columns["id"].Visible = false;
+            dtgConsultEvenement.Columns["laVille"].Visible = false;
+            dtgConsultEvenement.Columns["libelleVille"].HeaderText = "Nom de de la ville";
+            dtgConsultEvenement.Columns["leEvenementiel"].Visible = false;
+            dtgConsultEvenement.Columns["libelleEvenementiel"].HeaderText = "Nom de de l'événementiel";
         }
     }
 }
