@@ -23,6 +23,8 @@ namespace GesCampagneBO
         public DateTime DateFin { get => dateFin; set => dateFin = value; }
         public Ville LaVille { get => laVille; set => laVille = value; }
         public Evenementiel LeEvenementiel { get => leEvenementiel; set => leEvenementiel = value; }
+        public string libelleVille { get => laVille.Libelle; }       
+        public string libelleEvenementiel { get => leEvenementiel.Nom; }
         public int Id { get => id; set => id = value; }
 
         public Evenement(int id, string theme, string libelle, DateTime dateDebut, DateTime dateFin, Ville laVille, Evenementiel leEvenementiel)

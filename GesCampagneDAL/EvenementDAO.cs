@@ -31,6 +31,8 @@ namespace GesCampagneDAL
             string strSQL;
             string theme;
             string libelle;
+            string libelleVille;
+            string libelleEvent;
             int laVille;
             int leEvenementiel;
             DateTime dateDebut;
@@ -50,7 +52,7 @@ namespace GesCampagneDAL
 
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "select theme, Evenement.libelle as 'EvenementLibelle', dateDebut, dateFin, Ville.id as 'idVille', Evenementiel.id as 'idEvenementiel' from Evenement join Ville on id_Ville = ville.id join Evenementiel on id_Evenementiel = Evenementiel.id";
+            strSQL = "select theme, Evenement.libelle as 'libellé', dateDebut, dateFin, Ville.id as 'idVille', Evenementiel.id as 'idEvenementiel', Ville.Libelle as 'villeLibelle', Evenementiel.Nom as 'NomEvent' from Evenement join Ville on id_Ville = ville.id join Evenementiel on id_Evenementiel = Evenementiel.id";
             maCommande.CommandText = strSQL;
             // DataReader qui récupère les enregistrements
             monLecteur = maCommande.ExecuteReader();
@@ -67,13 +69,13 @@ namespace GesCampagneDAL
                     theme = monLecteur["Theme"].ToString();
                 }
 
-                if (monLecteur["EvenementLibelle"] == DBNull.Value)
+                if (monLecteur["libellé"] == DBNull.Value)
                 {
                     libelle = default(string);
                 }
                 else
                 {
-                    libelle = monLecteur["EvenementLibelle"].ToString();
+                    libelle = monLecteur["libellé"].ToString();
                 }
 
                 if (monLecteur["dateDebut"] == DBNull.Value)
@@ -112,9 +114,25 @@ namespace GesCampagneDAL
                     leEvenementiel = (int)monLecteur["idEvenementiel"];
                 }
 
+                if (monLecteur["villeLibelle"] == DBNull.Value)
+                {
+                    libelleVille = default(string);
+                }
+                else
+                {
+                    libelleVille = monLecteur["villeLibelle"].ToString();
+                }
+                if (monLecteur["NomEvent"] == DBNull.Value)
+                {
+                    libelleEvent = default(string);
+                }
+                else
+                {
+                    libelleEvent = monLecteur["NomEvent"].ToString();
+                }
 
-                unEvenementiel = new Evenementiel(leEvenementiel);
-                uneVille = new Ville(laVille);
+                unEvenementiel = new Evenementiel(leEvenementiel, libelleEvent);
+                uneVille = new Ville(laVille, libelleVille);
                 // on crée une instance de la classe Employe
                 unEvenement = new Evenement(theme, libelle, dateDebut, dateFin, uneVille, unEvenementiel);
                 // on ajoute l'instance créée dans la collection
