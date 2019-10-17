@@ -8,23 +8,23 @@ using System.Threading.Tasks;
 
 namespace GesCampagneBLL
 {
-    public class CommunicatonManager
+    public class CommunicationManager
     {
-        private static CommunicatonManager uneInstance;
+        private static CommunicationManager uneInstance;
 
         //cette méthode crée un objet de la classe CommunicatonManager s'il n'existe pas déja un
         //puis retourne la référence à cet objet
-        public static CommunicatonManager GetInstance()
+        public static CommunicationManager GetInstance()
         {
             if (uneInstance == null)
             {
-                uneInstance = new CommunicatonManager();
+                uneInstance = new CommunicationManager();
             }
             return uneInstance;
         }
         //le constructeur par défaut est privé: il ne sera pas possible de créer un
         //objet à l'extérieur de la classe avec l'instruction new...
-        private CommunicatonManager()
+        private CommunicationManager()
         {
 
         }

@@ -20,35 +20,35 @@ namespace GesCampagneGUI
         {
             FrmGestionArtiste monArtiste;
             monArtiste = new FrmGestionArtiste();
-            monArtiste.Show(); // on affiche le formulaire
+            monArtiste.ShowDialog(); // on affiche le formulaire
         }
 
         private void consultationDesCaractDesCampagnesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmGestionCampagne maCampagne;
             maCampagne = new FrmGestionCampagne();
-            maCampagne.Show();
+            maCampagne.ShowDialog();
         }
 
         private void consultationDesCaractéristiqueDuneAgenceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmGestionAgence monAgence;
             monAgence = new FrmGestionAgence();
-            monAgence.Show();
+            monAgence.ShowDialog();
         }
 
         private void gererLesÉvénementsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmGestionEvenement maCampagne;
             maCampagne = new FrmGestionEvenement();
-            maCampagne.Show();
+            maCampagne.ShowDialog();
         }
 
         private void gererLesVIPsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmGestionVip unVIP;
             unVIP = new FrmGestionVip();
-            unVIP.Show();
+            unVIP.ShowDialog();
         }
 
         private void gererLesMessagesToolStripMenuItem_Click(object sender, EventArgs e)

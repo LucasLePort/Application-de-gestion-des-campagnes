@@ -31,7 +31,7 @@ namespace GesCampagneGUI
             int nbAjout;
             if (rbtComm.Checked == true)
             {
-                nbAjout = CommunicatonManager.GetInstance().CreerCommunication(txtNom.Text, txtRue.Text, txtNum.Text, txtMail.Text, txtSite.Text, (int)cbxVille.SelectedValue, out erreur);
+                nbAjout = CommunicationManager.GetInstance().CreerCommunication(txtNom.Text, txtRue.Text, txtNum.Text, txtMail.Text, txtSite.Text, (int)cbxVille.SelectedValue, out erreur);
                 if (nbAjout == 0)
                 {
                     message = "Aucune agence de communication n'a été ajoutée";

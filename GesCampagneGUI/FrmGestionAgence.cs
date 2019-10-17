@@ -21,6 +21,13 @@ namespace GesCampagneGUI
         {
             FrmAjoutAgence uneAgence;
             uneAgence = new FrmAjoutAgence();
+            uneAgence.ShowDialog();
+        }
+
+        private void btn_ConsultAgence_Click(object sender, EventArgs e)
+        {
+            FrmConsultAgence uneAgence;
+            uneAgence = new FrmConsultAgence();
             uneAgence.Show();
         }
     }

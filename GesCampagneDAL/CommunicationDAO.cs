@@ -37,7 +37,7 @@ namespace GesCampagneDAL
             string ville;
             Communication uneComm;
             Ville laVille;
-           string strSQL = "";
+            
 
             SqlConnection cnx = Connexion.GetObjConnexion();
 
@@ -51,8 +51,8 @@ namespace GesCampagneDAL
 
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "select nom, rue, telephone, mail, site, libelle as 'ville' FROM Communication join Ville on id_ville=Ville.id";
-            maCommande.CommandText = strSQL;
+            maCommande.CommandType = CommandType.StoredProcedure;
+            maCommande.CommandText = "obtenirlesagencesdecommunication";
 
             monLecteur = maCommande.ExecuteReader();
 
@@ -125,7 +125,9 @@ namespace GesCampagneDAL
             SqlCommand maCommande;
             maCommande = new SqlCommand("", cnx);
 
+
             strSQL = "insert into Communication values (@nom, @rue, @telephone, @mail, @site, @ville)";
+            
             maCommande.CommandText = strSQL;
             maCommande.Parameters.Add("nom", SqlDbType.VarChar);
             maCommande.Parameters[0].Value = uneComm.Nom;

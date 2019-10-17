@@ -76,3 +76,6 @@ D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debu
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBO.pdb
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneDAL.pdb
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CopyComplete
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources

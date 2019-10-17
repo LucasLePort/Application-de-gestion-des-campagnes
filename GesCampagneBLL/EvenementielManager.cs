@@ -12,7 +12,7 @@ namespace GesCampagneBLL
     {
         private static EvenementielManager uneInstance;
 
-        //cette méthode crée un objet de la classe CommunicatonManager s'il n'existe pas déja un
+        //cette méthode crée un objet de la classe EvenementielManager s'il n'existe pas déja un
         //puis retourne la référence à cet objet
         public static EvenementielManager GetInstance()
         {
@@ -29,6 +29,7 @@ namespace GesCampagneBLL
 
         }
 
+        //appel de la couche DAL pour récupérer une collection d'évenementiel
         //appel de la couche DAL pour récupérer une collection de communications
         public List<Evenementiel> GetEvenementiels()
         {
@@ -36,7 +37,7 @@ namespace GesCampagneBLL
             return EvenementielDAO.GetInstance().GetEvenementiels();
         }
 
-        //appel de la couche DAL ppur créer une nouvelle agence de Communication 
+        //appel de la couche DAL ppur créer une nouvelle agence d'évenementiel
         public int CreerEvenementiel(string sonNom, string saRue, string sonTelephone, string sonMail, string sonSite, int saVille, out string erreur)
         {
             erreur = "";

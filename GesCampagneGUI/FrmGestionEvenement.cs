@@ -21,7 +21,15 @@ namespace GesCampagneGUI
         {
            FrmAjoutEvenement unEvenement;
            unEvenement = new FrmAjoutEvenement();
-           unEvenement.Show();
+           unEvenement.ShowDialog();
+        }
+
+        private void btn_ConsultEvenement_Click(object sender, EventArgs e)
+        {
+            FrmConsultEvenement unEvenement;
+            unEvenement = new FrmConsultEvenement();
+            unEvenement.ShowDialog();
+
         }
     }
 }
