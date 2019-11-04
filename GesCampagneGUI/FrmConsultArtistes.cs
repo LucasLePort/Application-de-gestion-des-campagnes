@@ -25,5 +25,10 @@ namespace GesCampagneGUI
             
 
         }
+
+        private void txtCritereNom_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
