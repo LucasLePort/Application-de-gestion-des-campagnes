@@ -50,6 +50,7 @@
             this.btn_ConsultCampagne.TabIndex = 4;
             this.btn_ConsultCampagne.Text = "Consulter les campagnes";
             this.btn_ConsultCampagne.UseVisualStyleBackColor = true;
+            this.btn_ConsultCampagne.Click += new System.EventHandler(this.btn_ConsultCampagne_Click);
             // 
             // btn_AjoutCampagne
             // 

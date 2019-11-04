@@ -108,3 +108,4 @@ D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGU
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.pdb
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultCampagne.resources

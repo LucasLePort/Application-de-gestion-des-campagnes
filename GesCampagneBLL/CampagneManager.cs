@@ -31,11 +31,15 @@ namespace GesCampagneBLL
         }
 
         // permet de créer une campagne
-        public int CreerCampagne(string sonIntitule, string sonObjectif, DateTime dateDebut, DateTime dateFin, Communication laCommunication, Evenementiel lEvenementiel, CategPublic laCategPublic, out string msgErreur)
+        public int CreerCampagne(string sonIntitule, string sonObjectif, DateTime dateDebut, DateTime dateFin, int lEvenementiel, int laCommunication, int laCategPublic, out string msgErreur)
         {
             msgErreur = "";
             int ajoutCampagne = 0;
-            Campagne uneCampagne; 
+            Campagne uneCampagne;
+            Communication uneCommunication;
+            Evenementiel unEvenementiel;
+            CategPublic uneCategPublic;
+
             
             // vérification que tous les paramètres ont été saisi.
             if (sonIntitule == "")
@@ -53,16 +57,16 @@ namespace GesCampagneBLL
             if(dateFin == null)
             {
                 msgErreur += "\nVeuillez saisir une date de fin pour la campagne.";
-            }
-            if(laCommunication == null)
-            {
-                msgErreur += "\nVeuillez sélectionner une agence de communication.";
-            }
-            if(lEvenementiel == null)
+            }           
+            if(lEvenementiel == 0)
             {
                 msgErreur += "\nVeuillez sélectionner une agence d'évenementiel.";
             }
-            if(laCategPublic == null)
+            if (laCommunication == 0)
+            {
+                msgErreur += "\nVeuillez sélectionner une agence de communication.";
+            }
+            if (laCategPublic == 0)
             {
                 msgErreur += "\nVeuillez sélectionner le public.";
             }
@@ -70,7 +74,11 @@ namespace GesCampagneBLL
             // si il y tous les paramètres de saisi, on créer la campagne et on l'ajoute dans toutes les campagnes
             if (msgErreur == "")
             {
-                uneCampagne = new Campagne(sonIntitule, sonObjectif, dateDebut, dateFin, laCommunication, lEvenementiel, laCategPublic);
+                uneCommunication = new Communication(laCommunication);
+                unEvenementiel = new Evenementiel(lEvenementiel);
+                uneCategPublic = new CategPublic(laCategPublic);
+
+                uneCampagne = new Campagne(sonIntitule, sonObjectif, dateDebut, dateFin, unEvenementiel, uneCommunication, uneCategPublic, 2);
                 try
                 {
                     ajoutCampagne = CampagneDAO.GetInstance().AjoutCampagne(uneCampagne);
