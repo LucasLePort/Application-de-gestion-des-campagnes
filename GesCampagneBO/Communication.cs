@@ -16,6 +16,11 @@ namespace GesCampagneBO
         private string site;
         private Ville laVille;
 
+        public Communication(int id)
+        {
+            this.id = id;
+        }
+
         public Communication(int id, string nom)
         {
             this.id = id;
