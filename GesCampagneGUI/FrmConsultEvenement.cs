@@ -14,10 +14,10 @@ namespace GesCampagneGUI
 {
     public partial class FrmConsultEvenement : Form
     {
+        List<Evenement> lesEvenements;
         public FrmConsultEvenement()
         {
-            InitializeComponent();
-            List<Evenement> lesEvenements;
+            InitializeComponent();            
             lesEvenements = EvenementManager.GetInstance().GetEvenements();
             dtgConsultEvenement.DataSource = lesEvenements;
             dtgConsultEvenement.Columns["id"].Visible = false;
@@ -25,6 +25,12 @@ namespace GesCampagneGUI
             dtgConsultEvenement.Columns["libelleVille"].HeaderText = "Nom de de la ville";
             dtgConsultEvenement.Columns["leEvenementiel"].Visible = false;
             dtgConsultEvenement.Columns["libelleEvenementiel"].HeaderText = "Nom de de l'événementiel";
+        }
+
+        private void dtpDebut_ValueChanged(object sender, EventArgs e)
+        {
+            var result = lesEvenements.Where(x => x.(DateTime)DateDebut.Contains(dtpDebut.Text)).ToList();
+            dtgConsultEvenement.DataSource = result;
         }
     }
 }
