@@ -19,7 +19,9 @@ namespace GesCampagneGUI
         {
             InitializeComponent();
             List<Artiste> lesArtistes;
+            
             lesArtistes = ArtisteManager.GetInstance().GetArtistes();
+            this.lesArtistes = lesArtistes;
             dtgArtiste.DataSource = lesArtistes;
             dtgArtiste.Columns["id"].Visible = false;
             dtgArtiste.Columns[3].Visible = false;

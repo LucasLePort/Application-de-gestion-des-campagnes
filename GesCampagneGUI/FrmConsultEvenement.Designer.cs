@@ -30,14 +30,15 @@
         {
             this.dtgConsultEvenement = new System.Windows.Forms.DataGridView();
             this.pnlPeriode = new System.Windows.Forms.Panel();
+            this.lblPeriodeFin = new System.Windows.Forms.Label();
+            this.lblPeriodeDebut = new System.Windows.Forms.Label();
+            this.dtpFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpDebut = new System.Windows.Forms.DateTimePicker();
             this.lblPeriode = new System.Windows.Forms.Label();
             this.pnlChoixVille = new System.Windows.Forms.Panel();
-            this.lblChoixVille = new System.Windows.Forms.Label();
             this.cbxChoixVille = new System.Windows.Forms.ComboBox();
-            this.dtpDebut = new System.Windows.Forms.DateTimePicker();
-            this.dtpFin = new System.Windows.Forms.DateTimePicker();
-            this.lblPeriodeDebut = new System.Windows.Forms.Label();
-            this.lblPeriodeFin = new System.Windows.Forms.Label();
+            this.lblChoixVille = new System.Windows.Forms.Label();
+            this.btnRechercher = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsultEvenement)).BeginInit();
             this.pnlPeriode.SuspendLayout();
             this.pnlChoixVille.SuspendLayout();
@@ -60,8 +61,40 @@
             this.pnlPeriode.Controls.Add(this.lblPeriode);
             this.pnlPeriode.Location = new System.Drawing.Point(70, 4);
             this.pnlPeriode.Name = "pnlPeriode";
-            this.pnlPeriode.Size = new System.Drawing.Size(374, 82);
+            this.pnlPeriode.Size = new System.Drawing.Size(595, 82);
             this.pnlPeriode.TabIndex = 1;
+            // 
+            // lblPeriodeFin
+            // 
+            this.lblPeriodeFin.AutoSize = true;
+            this.lblPeriodeFin.Location = new System.Drawing.Point(40, 59);
+            this.lblPeriodeFin.Name = "lblPeriodeFin";
+            this.lblPeriodeFin.Size = new System.Drawing.Size(47, 13);
+            this.lblPeriodeFin.TabIndex = 4;
+            this.lblPeriodeFin.Text = "Date fin:";
+            // 
+            // lblPeriodeDebut
+            // 
+            this.lblPeriodeDebut.AutoSize = true;
+            this.lblPeriodeDebut.Location = new System.Drawing.Point(37, 22);
+            this.lblPeriodeDebut.Name = "lblPeriodeDebut";
+            this.lblPeriodeDebut.Size = new System.Drawing.Size(63, 13);
+            this.lblPeriodeDebut.TabIndex = 3;
+            this.lblPeriodeDebut.Text = "Date début:";
+            // 
+            // dtpFin
+            // 
+            this.dtpFin.Location = new System.Drawing.Point(145, 53);
+            this.dtpFin.Name = "dtpFin";
+            this.dtpFin.Size = new System.Drawing.Size(200, 20);
+            this.dtpFin.TabIndex = 2;
+            // 
+            // dtpDebut
+            // 
+            this.dtpDebut.Location = new System.Drawing.Point(145, 16);
+            this.dtpDebut.Name = "dtpDebut";
+            this.dtpDebut.Size = new System.Drawing.Size(200, 20);
+            this.dtpDebut.TabIndex = 1;
             // 
             // lblPeriode
             // 
@@ -81,6 +114,14 @@
             this.pnlChoixVille.Size = new System.Drawing.Size(374, 51);
             this.pnlChoixVille.TabIndex = 2;
             // 
+            // cbxChoixVille
+            // 
+            this.cbxChoixVille.FormattingEnabled = true;
+            this.cbxChoixVille.Location = new System.Drawing.Point(100, 16);
+            this.cbxChoixVille.Name = "cbxChoixVille";
+            this.cbxChoixVille.Size = new System.Drawing.Size(179, 21);
+            this.cbxChoixVille.TabIndex = 1;
+            // 
             // lblChoixVille
             // 
             this.lblChoixVille.AutoSize = true;
@@ -90,52 +131,22 @@
             this.lblChoixVille.TabIndex = 0;
             this.lblChoixVille.Text = "Choix Ville:";
             // 
-            // cbxChoixVille
+            // btnRechercher
             // 
-            this.cbxChoixVille.FormattingEnabled = true;
-            this.cbxChoixVille.Location = new System.Drawing.Point(100, 16);
-            this.cbxChoixVille.Name = "cbxChoixVille";
-            this.cbxChoixVille.Size = new System.Drawing.Size(179, 21);
-            this.cbxChoixVille.TabIndex = 1;
-            // 
-            // dtpDebut
-            // 
-            this.dtpDebut.Location = new System.Drawing.Point(145, 16);
-            this.dtpDebut.Name = "dtpDebut";
-            this.dtpDebut.Size = new System.Drawing.Size(200, 20);
-            this.dtpDebut.TabIndex = 1;
-            this.dtpDebut.ValueChanged += new System.EventHandler(this.dtpDebut_ValueChanged);
-            // 
-            // dtpFin
-            // 
-            this.dtpFin.Location = new System.Drawing.Point(145, 53);
-            this.dtpFin.Name = "dtpFin";
-            this.dtpFin.Size = new System.Drawing.Size(200, 20);
-            this.dtpFin.TabIndex = 2;
-            // 
-            // lblPeriodeDebut
-            // 
-            this.lblPeriodeDebut.AutoSize = true;
-            this.lblPeriodeDebut.Location = new System.Drawing.Point(37, 22);
-            this.lblPeriodeDebut.Name = "lblPeriodeDebut";
-            this.lblPeriodeDebut.Size = new System.Drawing.Size(63, 13);
-            this.lblPeriodeDebut.TabIndex = 3;
-            this.lblPeriodeDebut.Text = "Date début:";
-            // 
-            // lblPeriodeFin
-            // 
-            this.lblPeriodeFin.AutoSize = true;
-            this.lblPeriodeFin.Location = new System.Drawing.Point(40, 59);
-            this.lblPeriodeFin.Name = "lblPeriodeFin";
-            this.lblPeriodeFin.Size = new System.Drawing.Size(47, 13);
-            this.lblPeriodeFin.TabIndex = 4;
-            this.lblPeriodeFin.Text = "Date fin:";
+            this.btnRechercher.Location = new System.Drawing.Point(515, 115);
+            this.btnRechercher.Name = "btnRechercher";
+            this.btnRechercher.Size = new System.Drawing.Size(150, 23);
+            this.btnRechercher.TabIndex = 5;
+            this.btnRechercher.Text = "Rechercher";
+            this.btnRechercher.UseVisualStyleBackColor = true;
+            this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click);
             // 
             // FrmConsultEvenement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRechercher);
             this.Controls.Add(this.pnlChoixVille);
             this.Controls.Add(this.pnlPeriode);
             this.Controls.Add(this.dtgConsultEvenement);
@@ -162,5 +173,6 @@
         private System.Windows.Forms.DateTimePicker dtpDebut;
         private System.Windows.Forms.Label lblPeriodeFin;
         private System.Windows.Forms.Label lblPeriodeDebut;
+        private System.Windows.Forms.Button btnRechercher;
     }
 }
