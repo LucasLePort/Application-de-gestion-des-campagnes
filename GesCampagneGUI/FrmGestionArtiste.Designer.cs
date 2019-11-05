@@ -35,20 +35,20 @@
             // 
             // btn_ModifArtiste
             // 
-            this.btn_ModifArtiste.Location = new System.Drawing.Point(332, 168);
+            this.btn_ModifArtiste.Location = new System.Drawing.Point(496, 168);
             this.btn_ModifArtiste.Name = "btn_ModifArtiste";
             this.btn_ModifArtiste.Size = new System.Drawing.Size(134, 115);
             this.btn_ModifArtiste.TabIndex = 5;
-            this.btn_ModifArtiste.Text = "Modification des artistes";
+            this.btn_ModifArtiste.Text = "Modifier un artiste";
             this.btn_ModifArtiste.UseVisualStyleBackColor = true;
             // 
             // btnConsultArtiste
             // 
-            this.btnConsultArtiste.Location = new System.Drawing.Point(505, 168);
+            this.btnConsultArtiste.Location = new System.Drawing.Point(335, 168);
             this.btnConsultArtiste.Name = "btnConsultArtiste";
             this.btnConsultArtiste.Size = new System.Drawing.Size(127, 115);
             this.btnConsultArtiste.TabIndex = 4;
-            this.btnConsultArtiste.Text = "Consultation des artistes";
+            this.btnConsultArtiste.Text = "Consulter les artistes";
             this.btnConsultArtiste.UseVisualStyleBackColor = true;
             this.btnConsultArtiste.Click += new System.EventHandler(this.btnConsultArtiste_Click);
             // 
@@ -58,7 +58,7 @@
             this.btnAjoutArtiste.Name = "btnAjoutArtiste";
             this.btnAjoutArtiste.Size = new System.Drawing.Size(127, 115);
             this.btnAjoutArtiste.TabIndex = 3;
-            this.btnAjoutArtiste.Text = "Ajout d\'un artiste";
+            this.btnAjoutArtiste.Text = "Ajouter un artiste";
             this.btnAjoutArtiste.UseVisualStyleBackColor = true;
             this.btnAjoutArtiste.Click += new System.EventHandler(this.btnAjoutArtiste_Click);
             // 
