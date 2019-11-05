@@ -37,7 +37,6 @@ namespace GesCampagneDAL
 
             CategPublic uneCategPublic;
 
-            string strSQL = "";
 
             SqlConnection cnx = Connexion.GetObjConnexion();
 
@@ -51,8 +50,9 @@ namespace GesCampagneDAL
 
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "select id, libelle from CategPublic";
-            maCommande.CommandText = strSQL;
+           
+            maCommande.CommandType = System.Data.CommandType.StoredProcedure;
+            maCommande.CommandText = "obtenirtouteslescategoriesdepublic";
 
             monLecteur = maCommande.ExecuteReader();
 
