@@ -35,12 +35,12 @@ namespace GesCampagneGUI
             cbxCommunication.SelectedIndex = -1;
 
             // remplissage de la liste des catégories de public
-            //List<CategPublic> lesCategsPublic;
-            //lesCategsPublic = CategPublicManager.GetInstance().GetCategsPublic();
-            //cbxCategPublic.DisplayMember = "libelle";
-            //cbxCategPublic.ValueMember = "id";
-            //cbxCategPublic.DataSource = lesCategsPublic;
-            //cbxCategPublic.SelectedIndex = -1;
+            List<CategPublic> lesCategsPublic;
+            lesCategsPublic = CategPublicManager.GetInstance().GetCategsPublic();
+            cbxCategPublic.DisplayMember = "libelle";
+            cbxCategPublic.ValueMember = "id";
+            cbxCategPublic.DataSource = lesCategsPublic;
+            cbxCategPublic.SelectedIndex = -1;
             
         }
 
@@ -53,11 +53,11 @@ namespace GesCampagneGUI
             nbAjout = CampagneManager.GetInstance().CreerCampagne(txtIntitule.Text, txtObjectif.Text, dtpDebutCampagne.Value, dtpFinCampagne.Value, (int)cbxEvenementiel.SelectedValue, (int)cbxCommunication.SelectedValue, (int)cbxCategPublic.SelectedValue, out erreur);
             if (nbAjout == 0)
             {
-                message = "Aucune campagne n'a été ajouté";
+                message = "Aucune campagne n'a été ajoutée";
             }
             else
             {
-                message = "La campagne a bien été créé";
+                message = "La campagne a bien été créée";
             }
             if (erreur != "")
             {

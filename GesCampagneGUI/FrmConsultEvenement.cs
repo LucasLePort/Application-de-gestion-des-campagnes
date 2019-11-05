@@ -43,7 +43,7 @@ namespace GesCampagneGUI
 
             foreach (Evenement unEvent in lesEvenements)
             {
-                if(unEvent.DateDebut > dateDebut && unEvent.DateFin < dateFin && dateDebut < dateFin && unEvent.libelleVille == choixVille)
+                if(unEvent.DateDebut >= dateDebut && unEvent.DateFin <= dateFin && dateDebut < dateFin && unEvent.libelleVille == choixVille)
                 {
                     lesEvenementsPeriodes.Add(unEvent);
 
