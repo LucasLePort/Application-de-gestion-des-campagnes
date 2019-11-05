@@ -35,12 +35,12 @@ namespace GesCampagneGUI
             cbxCommunication.SelectedIndex = -1;
 
             // remplissage de la liste des catégories de public
-            //List<CategPublic> lesCategsPublic;
-            //lesCategsPublic = CategPublicManager.GetInstance().GetCategsPublic();
-            //cbxCategPublic.DisplayMember = "libelle";
-            //cbxCategPublic.ValueMember = "id";
-            //cbxCategPublic.DataSource = lesCategsPublic;
-            //cbxCategPublic.SelectedIndex = -1;
+            List<CategPublic> lesCategsPublic;
+            lesCategsPublic = CategPublicManager.GetInstance().GetCategsPublic();
+            cbxCategPublic.DisplayMember = "libelle";
+            cbxCategPublic.ValueMember = "id";
+            cbxCategPublic.DataSource = lesCategsPublic;
+            cbxCategPublic.SelectedIndex = -1;
             
         }
 
