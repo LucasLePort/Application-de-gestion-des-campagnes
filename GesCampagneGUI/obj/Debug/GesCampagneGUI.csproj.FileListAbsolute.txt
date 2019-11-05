@@ -78,6 +78,7 @@ D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debu
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CopyComplete
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
+<<<<<<< Updated upstream
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneGUI.exe.config
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneGUI.exe
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneGUI.pdb
@@ -87,6 +88,24 @@ D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGU
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBLL.pdb
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneBO.pdb
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\bin\Debug\GesCampagneDAL.pdb
+=======
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutCampagne.resources
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
+<<<<<<< Updated upstream
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
+D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultCampagne.resources
+<<<<<<< HEAD
+=======
+>>>>>>> Cooro
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultCampagne.resources
+>>>>>>> ecf982f38450ac9865c9f03c42ccf52cfd62c266
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutCampagne.resources
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
+>>>>>>> Stashed changes
+C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultCampagne.resources
+>>>>>>> Stashed changes
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csprojAssemblyReference.cache
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutAgence.resources
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutArtiste.resources
@@ -106,7 +125,12 @@ D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGU
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CopyComplete
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.exe
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.pdb
+<<<<<<< Updated upstream
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutCampagne.resources
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
+=======
+>>>>>>> 60fb49afac1f0acf83978c8ace1b7d1dc7106c5b
+>>>>>>> 74f7c23f6fb6d4e8d592323f7a35537e8b75f907
+>>>>>>> Stashed changes
