@@ -65,13 +65,8 @@ namespace GesCampagneDAL
 
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "select Campagne.id as 'idCampagne', intitule, objectif, dateDebut, dateFin,Evenementiel.id as 'idEvent', Evenementiel.nom as 'nomEvent'" +
-                ", Communication.id as 'idComm', Communication.nom as 'nomComm', CategPublic.id as 'idCatPublic', CategPublic.libelle as 'libCatPublic' " +
-                "from Campagne " +
-                "join Evenementiel on id_Evenementiel=Evenementiel.id " +
-                "join Communication on id_Communication=Communication.id " +
-                "join CategPublic on id_CategPublic=CategPublic.id";
-            maCommande.CommandText = strSQL;
+            maCommande.CommandType = CommandType.StoredProcedure;
+            maCommande.CommandText = "obtenirtouteslescampagnes";
 
             monLecteur = maCommande.ExecuteReader();
 
@@ -189,15 +184,15 @@ namespace GesCampagneDAL
 
         public int AjoutCampagne(Campagne uneCampagne)
         {
-            string strSQL = "";
             int nbEnreg = 0;
             SqlConnection cnx = Connexion.GetObjConnexion();
 
             SqlCommand maCommande;
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "insert into Campagne values (@intitule, @objectif, @dateDebut, @dateFin, @evenementiel, @communication, @categPublic, @utilisateur)";
-            maCommande.CommandText = strSQL;
+            maCommande.CommandType = CommandType.StoredProcedure;
+            maCommande.CommandText = "ajoutcampagne";
+
             maCommande.Parameters.Add("intitule", SqlDbType.VarChar);
             maCommande.Parameters[0].Value = uneCampagne.Intitule;
             maCommande.Parameters.Add("objectif", SqlDbType.VarChar);
