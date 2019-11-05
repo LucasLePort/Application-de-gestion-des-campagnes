@@ -53,6 +53,7 @@
             // 
             // txtRechercheNom
             // 
+            this.txtRechercheNom.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRechercheNom.Location = new System.Drawing.Point(377, 405);
             this.txtRechercheNom.Name = "txtRechercheNom";
             this.txtRechercheNom.Size = new System.Drawing.Size(308, 20);
