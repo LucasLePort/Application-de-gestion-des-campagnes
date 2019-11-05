@@ -17,3 +17,12 @@ GesCampagneGUI/App.config
 *.config
 *.config
 GesCampagneGUI/App.config
+GesCampagneBLL/bin/Debug/GesCampagneBLL.dll
+GesCampagneBLL/bin/Debug/GesCampagneBLL.pdb
+GesCampagneBLL/obj/Debug/GesCampagneBLL.dll
+GesCampagneBLL/obj/Debug/GesCampagneBLL.pdb
+GesCampagneGUI/bin/Debug/GesCampagneBLL.dll
+GesCampagneGUI/bin/Debug/GesCampagneBLL.pdb
+GesCampagneGUI/obj/Debug/GesCampagneGUI.csproj.FileListAbsolute.txt
+GesCampagneGUI/obj/Debug/GesCampagneGUI.exe
+GesCampagneGUI/obj/Debug/GesCampagneGUI.pdb
