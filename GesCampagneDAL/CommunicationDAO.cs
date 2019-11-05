@@ -81,7 +81,7 @@ namespace GesCampagneDAL
                 }
                 else
                 {
-                    rueComm = monLecteur["Nom"].ToString();
+                    rueComm = monLecteur["Rue"].ToString();
                 }
                 if (monLecteur["Telephone"] == DBNull.Value)
                 {
