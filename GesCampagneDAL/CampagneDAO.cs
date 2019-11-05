@@ -49,7 +49,6 @@ namespace GesCampagneDAL
             Communication uneCommunication;
             Evenementiel unEvenementiel;
             CategPublic uneCategPublic;
-            string strSQL = "";
 
             SqlConnection cnx = Connexion.GetObjConnexion();
 

@@ -111,27 +111,7 @@ D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGU
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultCampagne.resources
 <<<<<<< Updated upstream
 =======
-=======
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutCampagne.resources
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
->>>>>>> Stashed changes
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csprojAssemblyReference.cache
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutAgence.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutArtiste.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutCampagne.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutEvenement.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultArtistes.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmGestionAgence.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmGestionArtiste.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmGestionCampagne.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmGestionEvenement.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmGestionVip.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmMenu.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.Properties.Resources.resources
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.GenerateResource.cache
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CoreCompileInputs.cache
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.exe
-D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.pdb
 >>>>>>> Stashed changes
