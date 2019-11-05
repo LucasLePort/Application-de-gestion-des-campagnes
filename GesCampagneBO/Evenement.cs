@@ -47,5 +47,11 @@ namespace GesCampagneBO
             this.laVille = laVille;
             this.leEvenementiel = leEvenementiel;
         }
+
+        public Evenement(DateTime dateDebut, DateTime dateFin)
+        {
+            this.dateDebut = dateDebut;
+            this.dateFin = dateFin;
+        }
     }
 }

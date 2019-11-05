@@ -42,6 +42,7 @@ namespace GesCampagneBLL
             Evenement leEvenement;
             Evenementiel leEvenementiel;
             Ville laVille;
+            DateTime dateDuJour = DateTime.Today;
             int ajoutEvenement = 0;
             if (sonTheme == "")
             {
@@ -66,6 +67,14 @@ namespace GesCampagneBLL
             if (sonEvenementiel == 0)
             {
                 msgErreur += "\nVeuillez saisir l'événementiel correspondant à l'événement";
+            }
+            if(saDateDebut < dateDuJour)
+            {
+               msgErreur += "\nLa date de début de l'événement est inférieur à la date du jour";
+            }
+            if(saDateDebut > saDateFin)
+            {
+                msgErreur += "\nLa date de début de l'événement est supérieur à la date de fin de l'événement";
             }
             if (msgErreur == "")
             {

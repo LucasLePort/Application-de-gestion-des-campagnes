@@ -81,27 +81,12 @@ D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debu
 D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutCampagne.resources
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
-<<<<<<< Updated upstream
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultCampagne.resources
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Cooro
-=======
 D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultCampagne.resources
-=======
->>>>>>> ecf982f38450ac9865c9f03c42ccf52cfd62c266
-=======
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutCampagne.resources
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultAgence.resources
 C:\Users\ordiales\Desktop\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultEvenement.resources
->>>>>>> Stashed changes
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csprojAssemblyReference.cache
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutAgence.resources
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutArtiste.resources
@@ -120,8 +105,5 @@ D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGU
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.csproj.CoreCompileInputs.cache
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.exe
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.pdb
->>>>>>> Stashed changes
->>>>>>> Cooro
-=======
->>>>>>> 60fb49afac1f0acf83978c8ace1b7d1dc7106c5b
->>>>>>> ecf982f38450ac9865c9f03c42ccf52cfd62c266
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmAjoutCampagne.resources
+D:\2ieme année\PPE\Application-de-gestion-des-campagnes\GesCampagneGUI\obj\Debug\GesCampagneGUI.FrmConsultCampagne.resources
