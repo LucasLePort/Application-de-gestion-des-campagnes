@@ -24,7 +24,7 @@ namespace GesCampagneGUI
             lesEvents = EvenementielManager.GetInstance().GetEvenementiels();
 
             dtgAgence.DataSource = null;
-            dtgAgence.DataSource = lesComms ;
+            dtgAgence.DataSource = lesEvents ;
             dtgAgence.Visible = true;
             dtgAgence.Columns[0].Visible = false;
             dtgAgence.Columns[6].Visible = false;

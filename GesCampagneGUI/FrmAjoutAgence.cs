@@ -56,22 +56,20 @@ namespace GesCampagneGUI
                     }
                     else
                     {
-                        message = "L'agence d'évenementiel a bien été créée";
+                        message = "L'agence évenementiel a bien été créée";
                     }
                     if (erreur != "")
                     {
                         message = erreur;
                     }
-                }
-
-                MessageBox.Show(message);
-                txtNom.Text = "";
-                txtRue.Text = "";
-                txtNum.Text = "";
-                txtMail.Text = "";
-                txtSite.Text = "";
-
+                }          
             }
+            MessageBox.Show(message);
+            txtNom.Text = "";
+            txtRue.Text = "";
+            txtNum.Text = "";
+            txtMail.Text = "";
+            txtSite.Text = "";
         }
     }
 }
