@@ -39,6 +39,7 @@ namespace GesCampagneBLL
             Communication uneCommunication;
             Evenementiel unEvenementiel;
             CategPublic uneCategPublic;
+            DateTime dateJour = DateTime.Today;
 
             
             // vérification que tous les paramètres ont été saisi.
@@ -69,6 +70,14 @@ namespace GesCampagneBLL
             if (laCategPublic == 0)
             {
                 msgErreur += "\nVeuillez sélectionner le public.";
+            }
+            if(dateDebut<dateJour)
+            {
+                msgErreur += "\nVeuillez sélectionner une date supérieur à la date du jour.";
+            }
+            if(dateDebut>dateFin)
+            {
+                msgErreur += "\nLa date de début est supérieur à la date de fin.";
             }
 
             // si il y tous les paramètres de saisi, on créer la campagne et on l'ajoute dans toutes les campagnes

@@ -53,11 +53,11 @@ namespace GesCampagneGUI
             nbAjout = CampagneManager.GetInstance().CreerCampagne(txtIntitule.Text, txtObjectif.Text, dtpDebutCampagne.Value, dtpFinCampagne.Value, (int)cbxEvenementiel.SelectedValue, (int)cbxCommunication.SelectedValue, (int)cbxCategPublic.SelectedValue, out erreur);
             if (nbAjout == 0)
             {
-                message = "Aucune campagne n'a été ajouté";
+                message = "Aucune campagne n'a été ajoutée";
             }
             else
             {
-                message = "La campagne a bien été créé";
+                message = "La campagne a bien été créée";
             }
             if (erreur != "")
             {
