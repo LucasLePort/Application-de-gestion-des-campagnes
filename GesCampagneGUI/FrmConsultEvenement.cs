@@ -29,8 +29,7 @@ namespace GesCampagneGUI
 
         private void dtpDebut_ValueChanged(object sender, EventArgs e)
         {
-            var result = lesEvenements.Where(x => x.(DateTime)DateDebut.Contains(dtpDebut.Text)).ToList();
-            dtgConsultEvenement.DataSource = result;
+           
         }
     }
 }
