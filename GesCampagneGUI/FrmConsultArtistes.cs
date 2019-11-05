@@ -14,6 +14,7 @@ namespace GesCampagneGUI
 {
     public partial class FrmConsultArtistes : Form
     {
+        List<Artiste> lesArtistes;
         public FrmConsultArtistes()
         {
             InitializeComponent();
@@ -28,7 +29,8 @@ namespace GesCampagneGUI
 
         private void txtCritereNom_TextChanged(object sender, EventArgs e)
         {
-           
+            var result = lesArtistes.Where(x => x.Nom.ToString().Contains(txtCritereNom.Text)).ToList();
+            dtgArtiste.DataSource = result;
         }
     }
 }
