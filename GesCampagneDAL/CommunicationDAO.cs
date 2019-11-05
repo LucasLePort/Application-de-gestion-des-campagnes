@@ -127,17 +127,16 @@ namespace GesCampagneDAL
 
         public int AjoutComm(Communication uneComm)
         {
-            string strSQL = "";
             int nbEnreg = 0;
             SqlConnection cnx = Connexion.GetObjConnexion();
 
             SqlCommand maCommande;
             maCommande = new SqlCommand("", cnx);
 
+            maCommande.CommandType = CommandType.StoredProcedure;
 
-            strSQL = "insert into Communication values (@nom, @rue, @telephone, @mail, @site, @ville)";
-            
-            maCommande.CommandText = strSQL;
+            maCommande.CommandText = "ajoutcommunication";
+           
             maCommande.Parameters.Add("nom", SqlDbType.VarChar);
             maCommande.Parameters[0].Value = uneComm.Nom;
             maCommande.Parameters.Add("rue", SqlDbType.VarChar);
