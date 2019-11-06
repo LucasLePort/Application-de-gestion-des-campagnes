@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace GesCampagneBLL
@@ -44,7 +45,7 @@ namespace GesCampagneBLL
             Evenementiel leEvent;
             Ville laVille;
             int ajoutEvent= 0;
-
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,5})+)$");
 
             if (sonNom == "")
             {
@@ -61,6 +62,10 @@ namespace GesCampagneBLL
             if (sonMail == "")
             {
                 erreur += "\nVeuillez saisir l'adresse mail de l'agence";
+            }
+            if (regex.IsMatch(sonMail) == false)
+            {
+                erreur += "\nVeuillez saisir une adresse email correcte ( exemple: GesCamp@gmail.com)";
             }
             if (sonSite == "")
             {

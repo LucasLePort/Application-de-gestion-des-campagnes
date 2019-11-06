@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agence.cs" />
     <Compile Include="Artiste.cs" />
     <Compile Include="Campagne.cs" />
     <Compile Include="CategPublic.cs" />

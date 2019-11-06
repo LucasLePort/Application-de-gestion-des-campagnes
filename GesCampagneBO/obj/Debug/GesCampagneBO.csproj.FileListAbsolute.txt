@@ -21,3 +21,4 @@ D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.csproj.CoreCompileInputs.cache
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.dll
 D:\Cours\2ème année\Dev\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.pdb
+D:\BTS SIO\PPE\Application-de-gestion-des-campagnes\GesCampagneBO\obj\Debug\GesCampagneBO.csprojAssemblyReference.cache

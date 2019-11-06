@@ -22,6 +22,17 @@ namespace GesCampagneBO
             this.id = id;
         }
 
+        public Agence(string nom, string rue, string telephone, string mail, string site, Ville laVille, string typeAgence)
+        {
+            this.nom = nom;
+            this.rue = rue;
+            this.telephone = telephone;
+            this.mail = mail;
+            this.site = site;
+            this.laVille = laVille;
+            this.typeAgence = typeAgence;
+        }
+
         public Agence(int id, string nom, string rue, string telephone, string mail, string site, Ville laVille, string typeAgence)
         {
             this.id = id;
@@ -41,8 +52,8 @@ namespace GesCampagneBO
         public string Mail { get => mail; set => mail = value; }
         public string Site { get => site; set => site = value; }
         public Ville LaVille { get => laVille; set => laVille = value; }
-        public string TypeAgence { get => typeAgence; set => typeAgence = value; }
         public string LibelleVille { get => LaVille.Libelle; }
-        
+        public string TypeAgence { get => typeAgence; set => typeAgence = value; }
+
     }
 }

@@ -108,13 +108,13 @@ namespace GesCampagneDAL
                 {
                     siteAgence = monLecteur["Site"].ToString();
                 }
-                if (monLecteur["Ville"] == DBNull.Value)
+                if (monLecteur["ville"] == DBNull.Value)
                 {
                     ville = default(string);
                 }
                 else
                 {
-                    ville = monLecteur["Ville"].ToString();
+                    ville = monLecteur["ville"].ToString();
                 }
                 if(monLecteur["TypeAgence"]==DBNull.Value)
                 {

@@ -30,7 +30,7 @@ namespace GesCampagneBLL
         }
 
         //appel de la couche DAL pour récupérer une collection de communications
-        public List<Agence> GetCommunications()
+        public List<Agence> GetAgences()
         {
             //ici on peut appliquer des règles métier
             return AgenceDAO.GetInstance().GetAgences();
