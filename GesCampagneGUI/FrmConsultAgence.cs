@@ -19,7 +19,7 @@ namespace GesCampagneGUI
             InitializeComponent();
             List<Communication> lesComms;
             List<Evenementiel> lesEvents;
-            List<Agence> lesAgences;
+            //List<Agence> lesAgences;
 
             lesComms = CommunicationManager.GetInstance().GetCommunications();
             lesEvents = EvenementielManager.GetInstance().GetEvenementiels();

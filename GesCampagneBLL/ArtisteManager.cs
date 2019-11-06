@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace GesCampagneBLL
@@ -32,13 +33,21 @@ namespace GesCampagneBLL
             int ajoutArtiste = 0;
             Courant unCourant;
             Artiste unArtiste;
-            if(sonNom == "")
+            string pattern = @"http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?";
+            Regex url = new Regex(pattern);
+            
+
+            if (sonNom == "")
             {
                 msgErreur += "\nVeuillez saisir le nom de l'artiste";
             }
             if (sonCourant == 0)
             {
                 msgErreur += "\nVeuillez saisir le courant de l'artiste";
+            }
+            if(url.IsMatch(sonSite) == false)
+            {
+                msgErreur += "\nVeuillez saisir un url valide (www.nomSite.com)";
             }
             if (msgErreur == "")
             {
