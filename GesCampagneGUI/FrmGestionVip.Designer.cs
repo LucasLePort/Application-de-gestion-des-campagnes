@@ -35,16 +35,16 @@
             // 
             // btn_ConsultVip
             // 
-            this.btn_ConsultVip.Location = new System.Drawing.Point(503, 168);
+            this.btn_ConsultVip.Location = new System.Drawing.Point(344, 168);
             this.btn_ConsultVip.Name = "btn_ConsultVip";
             this.btn_ConsultVip.Size = new System.Drawing.Size(131, 115);
             this.btn_ConsultVip.TabIndex = 5;
-            this.btn_ConsultVip.Text = "Consultation des VIPs";
+            this.btn_ConsultVip.Text = "Consulter les VIPs";
             this.btn_ConsultVip.UseVisualStyleBackColor = true;
             // 
             // btn_ModifVip
             // 
-            this.btn_ModifVip.Location = new System.Drawing.Point(338, 168);
+            this.btn_ModifVip.Location = new System.Drawing.Point(518, 168);
             this.btn_ModifVip.Name = "btn_ModifVip";
             this.btn_ModifVip.Size = new System.Drawing.Size(131, 115);
             this.btn_ModifVip.TabIndex = 4;

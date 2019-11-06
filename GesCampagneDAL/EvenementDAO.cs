@@ -51,8 +51,8 @@ namespace GesCampagneDAL
             List<Ville> lesVilles = new List<Ville>();
 
             maCommande = new SqlCommand("", cnx);
-
-            strSQL = "select theme, Evenement.libelle as 'libellé', dateDebut, dateFin, Ville.id as 'idVille', Evenementiel.id as 'idEvenementiel', Ville.Libelle as 'villeLibelle', Evenementiel.Nom as 'NomEvent' from Evenement join Ville on id_Ville = ville.id join Evenementiel on id_Evenementiel = Evenementiel.id";
+            maCommande.CommandType = CommandType.StoredProcedure;
+            strSQL = "obtenirDonneeEvenement";
             maCommande.CommandText = strSQL;
             // DataReader qui récupère les enregistrements
             monLecteur = maCommande.ExecuteReader();
@@ -152,7 +152,8 @@ namespace GesCampagneDAL
             //création de l'objet de type SqlCommand
             SqlCommand maCommande;
             maCommande = new SqlCommand("", cnx);
-            strSQL = "insert into Evenement values(@theme,@libelle, @dateDebut, @dateFin, @idVille , @idEvenementiel)";
+            maCommande.CommandType = CommandType.StoredProcedure;
+            strSQL = "ajouterevenement";
             maCommande.CommandText = strSQL;
             maCommande.Parameters.Add("theme", SqlDbType.VarChar);
             maCommande.Parameters[0].Value = unEvenement.Theme;

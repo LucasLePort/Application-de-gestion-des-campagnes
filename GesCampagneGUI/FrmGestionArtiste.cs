@@ -31,4 +31,4 @@ namespace GesCampagneGUI
             monAjoutArtiste.ShowDialog();
         }
     }
-}
+} 

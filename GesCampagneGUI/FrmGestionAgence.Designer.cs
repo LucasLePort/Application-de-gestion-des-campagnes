@@ -39,14 +39,14 @@
             this.btn_ModifAgence.Name = "btn_ModifAgence";
             this.btn_ModifAgence.Size = new System.Drawing.Size(132, 118);
             this.btn_ModifAgence.TabIndex = 5;
-            this.btn_ModifAgence.Text = "Modifications des agences";
+            this.btn_ModifAgence.Text = "Modifier une agence";
             this.btn_ModifAgence.UseVisualStyleBackColor = true;
             // 
             // btn_ConsultAgence
             // 
             this.btn_ConsultAgence.Location = new System.Drawing.Point(337, 166);
             this.btn_ConsultAgence.Name = "btn_ConsultAgence";
-            this.btn_ConsultAgence.Size = new System.Drawing.Size(116, 118);
+            this.btn_ConsultAgence.Size = new System.Drawing.Size(122, 118);
             this.btn_ConsultAgence.TabIndex = 4;
             this.btn_ConsultAgence.Text = "Consulter les agences";
             this.btn_ConsultAgence.UseVisualStyleBackColor = true;

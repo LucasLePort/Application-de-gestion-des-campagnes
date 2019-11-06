@@ -23,5 +23,12 @@ namespace GesCampagneGUI
             uneCampagne = new FrmAjoutCampagne();
             uneCampagne.ShowDialog();
         }
+
+        private void btn_ConsultCampagne_Click(object sender, EventArgs e)
+        {
+            FrmConsultCampagne uneConsultationDeCampagnes;
+            uneConsultationDeCampagnes = new FrmConsultCampagne();
+            uneConsultationDeCampagnes.ShowDialog();
+        }
     }
 }

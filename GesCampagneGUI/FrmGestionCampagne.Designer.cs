@@ -37,7 +37,7 @@
             // 
             this.btn_ModifCampagne.Location = new System.Drawing.Point(519, 167);
             this.btn_ModifCampagne.Name = "btn_ModifCampagne";
-            this.btn_ModifCampagne.Size = new System.Drawing.Size(113, 117);
+            this.btn_ModifCampagne.Size = new System.Drawing.Size(148, 117);
             this.btn_ModifCampagne.TabIndex = 5;
             this.btn_ModifCampagne.Text = "Modifier une campagne";
             this.btn_ModifCampagne.UseVisualStyleBackColor = true;
@@ -46,18 +46,19 @@
             // 
             this.btn_ConsultCampagne.Location = new System.Drawing.Point(349, 167);
             this.btn_ConsultCampagne.Name = "btn_ConsultCampagne";
-            this.btn_ConsultCampagne.Size = new System.Drawing.Size(113, 117);
+            this.btn_ConsultCampagne.Size = new System.Drawing.Size(136, 117);
             this.btn_ConsultCampagne.TabIndex = 4;
             this.btn_ConsultCampagne.Text = "Consulter les campagnes";
             this.btn_ConsultCampagne.UseVisualStyleBackColor = true;
+            this.btn_ConsultCampagne.Click += new System.EventHandler(this.btn_ConsultCampagne_Click);
             // 
             // btn_AjoutCampagne
             // 
             this.btn_AjoutCampagne.Location = new System.Drawing.Point(169, 167);
             this.btn_AjoutCampagne.Name = "btn_AjoutCampagne";
-            this.btn_AjoutCampagne.Size = new System.Drawing.Size(113, 117);
+            this.btn_AjoutCampagne.Size = new System.Drawing.Size(127, 117);
             this.btn_AjoutCampagne.TabIndex = 3;
-            this.btn_AjoutCampagne.Text = "Créer une campagne";
+            this.btn_AjoutCampagne.Text = "Ajouter une campagne";
             this.btn_AjoutCampagne.UseVisualStyleBackColor = true;
             this.btn_AjoutCampagne.Click += new System.EventHandler(this.btn_AjoutCampagne_Click);
             // 

@@ -1,6 +1,7 @@
 ﻿using GesCampagneBO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,10 @@ namespace GesCampagneDAL
 {
     public class CampagneDAO
     {
+        // instanciation de l'instance
         private static CampagneDAO uneInstance;
 
+        // création de l'instance si elle n'existe pas
         public static CampagneDAO GetInstance()
         {
             if (uneInstance == null)
@@ -21,11 +24,13 @@ namespace GesCampagneDAL
             return uneInstance;
         }
 
+        // constructeur privé 
         private CampagneDAO()
         {
 
         }
 
+        // permet de récupérer 
         public List<Campagne> GetCampagnes()
         {
             int idLu;
@@ -44,7 +49,6 @@ namespace GesCampagneDAL
             Communication uneCommunication;
             Evenementiel unEvenementiel;
             CategPublic uneCategPublic;
-            string strSQL = "";
 
             SqlConnection cnx = Connexion.GetObjConnexion();
 
@@ -60,13 +64,8 @@ namespace GesCampagneDAL
 
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "select Campagne.id as 'idCampagne', intitule, objectif, dateDebut, dateFin,Evenementiel.id as 'idEvent', Evenementiel.nom as 'nomEvent'" +
-                ", Communication.id as 'idComm', Communication.nom as 'nomComm', CategPublic.id_ as 'idCatPublic', CategPublic.libelle as 'libCatPublic'" +
-                "from Campagne " +
-                "join Evenementiel on id_Evenementiel=Evenementiel.id " +
-                "join Communication on id_Communication=Communication.id" +
-                "join CategPublic on id_CategPublic=CategPublic.id";
-            maCommande.CommandText = strSQL;
+            maCommande.CommandType = CommandType.StoredProcedure;
+            maCommande.CommandText = "obtenirtouteslescampagnes";
 
             monLecteur = maCommande.ExecuteReader();
 
@@ -80,6 +79,7 @@ namespace GesCampagneDAL
                 {
                     idLu = (int)monLecteur["idCampagne"];
                 }
+
                 if (monLecteur["intitule"] == DBNull.Value)
                 {
                     intituleLu = default(string);
@@ -88,6 +88,7 @@ namespace GesCampagneDAL
                 {
                     intituleLu = monLecteur["intitule"].ToString();
                 }
+
                 if (monLecteur["objectif"] == DBNull.Value)
                 {
                     objectifLu = default(string);
@@ -96,6 +97,7 @@ namespace GesCampagneDAL
                 {
                     objectifLu = monLecteur["objectif"].ToString();
                 }
+
                 if (monLecteur["dateDebut"] == DBNull.Value)
                 {
                     dateDebutLu = default(DateTime);
@@ -104,6 +106,7 @@ namespace GesCampagneDAL
                 {
                     dateDebutLu = (DateTime)monLecteur["dateDebut"];
                 }
+
                 if (monLecteur["dateFin"] == DBNull.Value)
                 {
                     dateFinLu = default(DateTime);
@@ -112,6 +115,7 @@ namespace GesCampagneDAL
                 {
                     dateFinLu = (DateTime)monLecteur["dateFin"];
                 }
+
                 if (monLecteur["idEvent"] == DBNull.Value)
                 {
                     idEvenementielLu = default(int);
@@ -120,6 +124,7 @@ namespace GesCampagneDAL
                 {
                     idEvenementielLu = (int)monLecteur["idEvent"];
                 }
+
                 if (monLecteur["nomEvent"] == DBNull.Value)
                 {
                     nomEvenementielLu = default(string);
@@ -128,6 +133,7 @@ namespace GesCampagneDAL
                 {
                     nomEvenementielLu = monLecteur["nomEvent"].ToString();
                 }
+
                 if (monLecteur["idComm"] == DBNull.Value)
                 {
                     idCommunicationLu = default(int);
@@ -136,6 +142,7 @@ namespace GesCampagneDAL
                 {
                     idCommunicationLu = (int)monLecteur["idComm"];
                 }
+
                 if (monLecteur["nomComm"] == DBNull.Value)
                 {
                     nomCommunicationLu = default(string);
@@ -144,6 +151,7 @@ namespace GesCampagneDAL
                 {
                     nomCommunicationLu = monLecteur["nomComm"].ToString();
                 }
+
                 if (monLecteur["idCatPublic"] == DBNull.Value)
                 {
                     idCategPublicLu = default(int);
@@ -152,6 +160,7 @@ namespace GesCampagneDAL
                 {
                     idCategPublicLu = (int)monLecteur["idCatPublic"];
                 }
+
                 if (monLecteur["libCatPublic"] == DBNull.Value)
                 {
                     libelleCategPublicLu = default(string);
@@ -164,37 +173,41 @@ namespace GesCampagneDAL
                 unEvenementiel = new Evenementiel(idEvenementielLu, nomEvenementielLu);
                 uneCommunication = new Communication(idCommunicationLu, nomCommunicationLu);
                 uneCategPublic = new CategPublic(idCategPublicLu, libelleCategPublicLu);
-                uneCampagne = new Campagne(idLu, intituleLu, objectifLu, dateDebutLu, dateFinLu, uneCommunication, unEvenementiel, uneCategPublic);
+                uneCampagne = new Campagne(idLu, intituleLu, objectifLu, dateDebutLu, dateFinLu, unEvenementiel, uneCommunication, uneCategPublic);
 
-                lesEvents.Add(unEvent);
+                lesCampagnes.Add(uneCampagne);
             }
             monLecteur.Close();
-            return lesEvents;
+            return lesCampagnes;
         }
 
-        public int AjoutEvent(Evenementiel unEvent)
+        public int AjoutCampagne(Campagne uneCampagne)
         {
-            string strSQL = "";
             int nbEnreg = 0;
             SqlConnection cnx = Connexion.GetObjConnexion();
 
             SqlCommand maCommande;
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "insert into Evenementiel values (@nom, @rue, @telephone, @mail, @site, @ville)";
-            maCommande.CommandText = strSQL;
-            maCommande.Parameters.Add("nom", SqlDbType.VarChar);
-            maCommande.Parameters[0].Value = unEvent.Nom;
-            maCommande.Parameters.Add("rue", SqlDbType.VarChar);
-            maCommande.Parameters[1].Value = unEvent.Rue;
-            maCommande.Parameters.Add("telephone", SqlDbType.VarChar);
-            maCommande.Parameters[2].Value = unEvent.Telephone;
-            maCommande.Parameters.Add("mail", SqlDbType.VarChar);
-            maCommande.Parameters[3].Value = unEvent.Mail;
-            maCommande.Parameters.Add("site", SqlDbType.VarChar);
-            maCommande.Parameters[4].Value = unEvent.Site;
-            maCommande.Parameters.Add("ville", SqlDbType.Int);
-            maCommande.Parameters[5].Value = unEvent.LaVille.Id;
+            maCommande.CommandType = CommandType.StoredProcedure;
+            maCommande.CommandText = "ajoutcampagne";
+
+            maCommande.Parameters.Add("intitule", SqlDbType.VarChar);
+            maCommande.Parameters[0].Value = uneCampagne.Intitule;
+            maCommande.Parameters.Add("objectif", SqlDbType.VarChar);
+            maCommande.Parameters[1].Value = uneCampagne.Objectif;
+            maCommande.Parameters.Add("dateDebut", SqlDbType.DateTime);
+            maCommande.Parameters[2].Value = uneCampagne.DateDebut;
+            maCommande.Parameters.Add("dateFin", SqlDbType.DateTime);
+            maCommande.Parameters[3].Value = uneCampagne.DateFin;          
+            maCommande.Parameters.Add("evenementiel", SqlDbType.Int);
+            maCommande.Parameters[4].Value = uneCampagne.LEvenementiel.Id;
+            maCommande.Parameters.Add("communication", SqlDbType.Int);
+            maCommande.Parameters[5].Value = uneCampagne.LaCommunication.Id;
+            maCommande.Parameters.Add("categPublic", SqlDbType.Int);
+            maCommande.Parameters[6].Value = uneCampagne.LaCategPublic.Id;
+            maCommande.Parameters.Add("utilisateur", SqlDbType.Int);
+            maCommande.Parameters[7].Value = uneCampagne.LUtilisateur;
 
             nbEnreg = maCommande.ExecuteNonQuery();
             return nbEnreg;

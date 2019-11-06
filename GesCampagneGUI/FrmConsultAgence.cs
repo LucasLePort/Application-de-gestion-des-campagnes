@@ -19,12 +19,13 @@ namespace GesCampagneGUI
             InitializeComponent();
             List<Communication> lesComms;
             List<Evenementiel> lesEvents;
+            List<Agence> lesAgences;
 
             lesComms = CommunicationManager.GetInstance().GetCommunications();
             lesEvents = EvenementielManager.GetInstance().GetEvenementiels();
 
             dtgAgence.DataSource = null;
-            dtgAgence.DataSource = lesComms ;
+            dtgAgence.DataSource = lesEvents ;
             dtgAgence.Visible = true;
             dtgAgence.Columns[0].Visible = false;
             dtgAgence.Columns[6].Visible = false;

@@ -12,6 +12,11 @@ namespace GesCampagneBO
         private int id;
         private string libelle;
 
+        public CategPublic(int id)
+        {
+            this.id = id;
+        }
+
         public CategPublic(int id, string libelle)
         {
             this.id = id;

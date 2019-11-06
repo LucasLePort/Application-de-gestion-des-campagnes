@@ -17,6 +17,7 @@ namespace GesCampagneGUI
         public FrmAjoutCampagne()
         {
             InitializeComponent();
+
             // remplissage de la liste d'agences qui font de l'événementiel
             List<Evenementiel> lesAgencesEvenementiel;
             lesAgencesEvenementiel = EvenementielManager.GetInstance().GetEvenementiels();
@@ -27,7 +28,7 @@ namespace GesCampagneGUI
 
             // remplissage de la liste d'agences qui font de la communication
             List<Communication> lesAgencesCommunication;
-            lesAgencesCommunication = CommunicatonManager.GetInstance().GetCommunications();
+            lesAgencesCommunication = CommunicationManager.GetInstance().GetCommunications();
             cbxCommunication.DisplayMember = "nom";
             cbxCommunication.ValueMember = "id";
             cbxCommunication.DataSource = lesAgencesCommunication;
@@ -41,6 +42,38 @@ namespace GesCampagneGUI
             cbxCategPublic.DataSource = lesCategsPublic;
             cbxCategPublic.SelectedIndex = -1;
             
+        }
+
+        private void btnValider_Click(object sender, EventArgs e)
+        {
+            string message = "";
+            string erreur = "";
+            int nbAjout = 0;
+
+            nbAjout = CampagneManager.GetInstance().CreerCampagne(txtIntitule.Text, txtObjectif.Text, dtpDebutCampagne.Value, dtpFinCampagne.Value, (int)cbxEvenementiel.SelectedValue, (int)cbxCommunication.SelectedValue, (int)cbxCategPublic.SelectedValue, out erreur);
+            if (nbAjout == 0)
+            {
+                message = "Aucune campagne n'a été ajoutée";
+            }
+            else
+            {
+                message = "La campagne a bien été créée";
+            }
+            if (erreur != "")
+            {
+                message = erreur;
+            }
+            MessageBox.Show(message);
+
+            // réinitialisation des champs.
+            txtIntitule.Text = "";
+            txtObjectif.Text = "";
+            dtpDebutCampagne.Text = "";
+            dtpFinCampagne.Text = "";
+            cbxCommunication.Text = "";
+            cbxEvenementiel.Text = "";
+            cbxCategPublic.Text = "";
+
         }
     }
 }

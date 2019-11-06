@@ -76,6 +76,12 @@
     <Compile Include="FrmConsultArtistes.Designer.cs">
       <DependentUpon>FrmConsultArtistes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsultCampagne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultCampagne.Designer.cs">
+      <DependentUpon>FrmConsultCampagne.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultEvenement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultArtistes.resx">
       <DependentUpon>FrmConsultArtistes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultCampagne.resx">
+      <DependentUpon>FrmConsultCampagne.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultEvenement.resx">
       <DependentUpon>FrmConsultEvenement.cs</DependentUpon>

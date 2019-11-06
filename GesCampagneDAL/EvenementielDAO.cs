@@ -38,7 +38,6 @@ namespace GesCampagneDAL
             int idEvenementiel;
             Evenementiel unEvent;
             Ville laVille;
-            string strSQL = "";
 
             SqlConnection cnx = Connexion.GetObjConnexion();
 
@@ -52,8 +51,8 @@ namespace GesCampagneDAL
 
             maCommande = new SqlCommand("", cnx);
 
-            strSQL = "select Evenementiel.id as 'eventID', nom, rue, telephone, mail, site, libelle as 'ville' FROM Evenementiel join Ville on id_ville=Ville.id";
-            maCommande.CommandText = strSQL;
+            maCommande.CommandType = CommandType.StoredProcedure;
+            maCommande.CommandText = "obtenirlesagencesevenementiel";
 
             monLecteur = maCommande.ExecuteReader();
 
@@ -73,7 +72,7 @@ namespace GesCampagneDAL
                 }
                 else
                 {
-                    rueComm = monLecteur["Nom"].ToString();
+                    rueComm = monLecteur["Rue"].ToString();
                 }
                 if (monLecteur["Telephone"] == DBNull.Value)
                 {

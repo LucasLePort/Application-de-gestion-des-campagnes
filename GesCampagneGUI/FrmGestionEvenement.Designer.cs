@@ -37,9 +37,9 @@
             // 
             this.btn_ConsultEvenement.Location = new System.Drawing.Point(499, 164);
             this.btn_ConsultEvenement.Name = "btn_ConsultEvenement";
-            this.btn_ConsultEvenement.Size = new System.Drawing.Size(135, 122);
+            this.btn_ConsultEvenement.Size = new System.Drawing.Size(139, 122);
             this.btn_ConsultEvenement.TabIndex = 5;
-            this.btn_ConsultEvenement.Text = "Consultations des événements ";
+            this.btn_ConsultEvenement.Text = "Consulter les événements ";
             this.btn_ConsultEvenement.UseVisualStyleBackColor = true;
             this.btn_ConsultEvenement.Click += new System.EventHandler(this.btn_ConsultEvenement_Click);
             // 
@@ -49,7 +49,7 @@
             this.btn_ModifEvenement.Name = "btn_ModifEvenement";
             this.btn_ModifEvenement.Size = new System.Drawing.Size(132, 122);
             this.btn_ModifEvenement.TabIndex = 4;
-            this.btn_ModifEvenement.Text = "Modification d\'un événement";
+            this.btn_ModifEvenement.Text = "Modifier un événement";
             this.btn_ModifEvenement.UseVisualStyleBackColor = true;
             // 
             // btn_AjoutEvenement
@@ -58,7 +58,7 @@
             this.btn_AjoutEvenement.Name = "btn_AjoutEvenement";
             this.btn_AjoutEvenement.Size = new System.Drawing.Size(132, 122);
             this.btn_AjoutEvenement.TabIndex = 3;
-            this.btn_AjoutEvenement.Text = "Ajout d\'un événement";
+            this.btn_AjoutEvenement.Text = "Ajouter un événement";
             this.btn_AjoutEvenement.UseVisualStyleBackColor = true;
             this.btn_AjoutEvenement.Click += new System.EventHandler(this.btn_AjoutEvenement_Click);
             // 
